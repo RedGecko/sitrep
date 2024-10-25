@@ -8161,12 +8161,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^23.16.2":
-  version: 23.16.2
-  resolution: "i18next@npm:23.16.2"
+"i18next@npm:^23.16.4":
+  version: 23.16.4
+  resolution: "i18next@npm:23.16.4"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-  checksum: 10/38635d5b4530d256055b9b9bc471eddad630060c5fce06a426628487e05ea2ad0ed5dd2cb45e7e7afd16d58ecb8e6d13fad81c2391a07f1313256cf4b58dfb26
+  checksum: 10/a3aa6189aa4bf3022c372a03c88a2216d420b70f01369bd1017f7e51d0ed012dcda8b5f6476021835ab9574ee0ac5d056049fe4b720b5458b42bcc6ae66bd38d
   languageName: node
   linkType: hard
 
@@ -12651,7 +12651,7 @@ __metadata:
     graphql: "npm:^16.9.0"
     hat: "npm:^0.0.3"
     husky: "npm:^9.1.6"
-    i18next: "npm:^23.16.2"
+    i18next: "npm:^23.16.4"
     i18next-browser-languagedetector: "npm:^8.0.0"
     jest: "npm:^29.7.0"
     jsdom: "npm:^25.0.1"
