@@ -19,14 +19,11 @@ jobs:
         uses: actions/checkout@v4
       - uses: flipt-io/setup-action@v0.1.0
       - run: flipt validate
-      - uses: docker/login-action@v3
-        #if: github.ref == 'refs/heads/develop'
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and Push bundle
         #if: github.ref == 'refs/heads/develop'
+        env:
+          FLIPT_STORAGE_OCI_AUTHENTICATION_USERNAME: ${{ github.actor }}
+          FLIPT_STORAGE_OCI_AUTHENTICATION_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         run: |
           flipt bundle build sitrep-featureflags:latest
           flipt bundle push sitrep-featureflags:latest ghcr.io/f-eld-ch/sitrep/featureflags:develop
