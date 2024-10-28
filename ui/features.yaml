@@ -1,6 +1,7 @@
 version: "1.2"
 namespace: sitrep-ui
 flags:
+  # nimdanitro: flag for rolling out tasks Module, remove after tasks modules is GA
   - key: show-tasks
     name: Show Tasks
     type: BOOLEAN_FLAG_TYPE
@@ -10,6 +11,7 @@ flags:
       - segment:
           key: Development
           value: true
+  # nimdanitro: flag for rolling out Resources Module, remove after resources modules is GA
   - key: show-resources
     name: Show Resources
     type: BOOLEAN_FLAG_TYPE
