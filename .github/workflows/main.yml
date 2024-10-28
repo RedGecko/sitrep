@@ -11,6 +11,35 @@ on:
       - "main"
       - "develop"
 jobs:
+  featureFlagsValidate:
+    runs-on: ubuntu-latest
+    name: "Feature Flags"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: flipt-io/setup-action@v0.1.0
+      - run: flipt validate -d ui
+  featureFlagsDeploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/develop'
+    needs: featureFlagsValidate
+    name: "Push Feature Flags"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: flipt-io/setup-action@v0.1.0
+      - run: flipt validate -d ui
+      - uses: docker/login-action@v3
+        if: github.ref == 'refs/heads/develop'
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and Push bundle
+        if: github.ref == 'refs/heads/develop'
+        run: |
+          flipt bundle build sitrep-featureflags:latest
+          flipt bundle push sitrep-featureflags:latest ghcr.io/f-eld-ch/sitrep/featureflags:develop
   build:
     runs-on: ubuntu-latest
     name: "Test and Build"

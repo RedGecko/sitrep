@@ -1,0 +1,30 @@
+version: "1.2"
+namespace: sitrep-ui
+flags:
+  - key: show-tasks
+    name: Show Tasks
+    type: BOOLEAN_FLAG_TYPE
+    description: Show the task module (Pendenzen)
+    enabled: false
+    rollouts:
+      - segment:
+          key: Development
+          value: true
+  - key: show-resources
+    name: Show Resources
+    type: BOOLEAN_FLAG_TYPE
+    description: Show the resources module (Mittel)
+    enabled: false
+    rollouts:
+      - segment:
+          key: Development
+          value: true
+segments:
+  - key: Development
+    name: Development
+    constraints:
+      - type: STRING_COMPARISON_TYPE
+        property: domain
+        operator: isoneof
+        value: '["dev.sitrep.ch","localhost","127.0.0.1"]'
+    match_type: ALL_MATCH_TYPE
