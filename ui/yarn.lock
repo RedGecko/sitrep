@@ -2281,6 +2281,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@flipt-io/flipt-client-browser@npm:^0.0.17":
+  version: 0.0.17
+  resolution: "@flipt-io/flipt-client-browser@npm:0.0.17"
+  checksum: 10/284e5924b3756efd63ae5a3902d54534cd1266463557015b13b00822cf6fc10ee058d6634966519982326ec13e7423f08e65bdd61ed9a009a3bff75eef208d83
+  languageName: node
+  linkType: hard
+
 "@fortawesome/fontawesome-common-types@npm:6.6.0":
   version: 6.6.0
   resolution: "@fortawesome/fontawesome-common-types@npm:6.6.0"
@@ -3233,6 +3240,44 @@ __metadata:
     mkdirp: "npm:^1.0.4"
     rimraf: "npm:^3.0.2"
   checksum: 10/52dc02259d98da517fae4cb3a0a3850227bdae4939dda1980b788a7670636ca2b4a01b58df03dd5f65c1e3cb70c50fa8ce5762b582b3f499ec30ee5ce1fd9380
+  languageName: node
+  linkType: hard
+
+"@openfeature/core@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@openfeature/core@npm:1.4.0"
+  checksum: 10/7a253920b05659e4590c4b1c07f6fced25f5ff08ff9092ad6608f5c7f42075e44d0add94f95690414a1405e54c73e511db2963bfcc2e78f26f3f7861f755993d
+  languageName: node
+  linkType: hard
+
+"@openfeature/flipt-web-provider@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@openfeature/flipt-web-provider@npm:0.1.0"
+  dependencies:
+    "@flipt-io/flipt-client-browser": "npm:^0.0.17"
+    tslib: "npm:^2.3.0"
+  peerDependencies:
+    "@openfeature/web-sdk": ^1.0.0
+  checksum: 10/d9d80e2e343f77898639b29aee6bdcf2e65ef82cb4b7d350122481b31e30c668cb175e779edbcf51d70b78add960eb7399c976b52584bebf904e0e5863eb7fe1
+  languageName: node
+  linkType: hard
+
+"@openfeature/react-sdk@npm:^0.4.6":
+  version: 0.4.6
+  resolution: "@openfeature/react-sdk@npm:0.4.6"
+  peerDependencies:
+    "@openfeature/web-sdk": ^1.2.2
+    react: ">=16.8.0"
+  checksum: 10/bac78bc4e201739ae2903f7790195629566d5ace054cc30404d691838d4806b474ae98ae8bb8b87bbfdd015efa1ef6f9e8ffdeee9160b197d278536da3ffe7c1
+  languageName: node
+  linkType: hard
+
+"@openfeature/web-sdk@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "@openfeature/web-sdk@npm:1.2.4"
+  peerDependencies:
+    "@openfeature/core": 1.4.0
+  checksum: 10/3dcef55af73050638c8c15fccbb23fb20d5efd9619b822d86b926c11b2c042191e0e3a98b5412fc0fe66ef9506941d6dbf2a28caa29847e54b683386fc7d0dc0
   languageName: node
   linkType: hard
 
@@ -12623,6 +12668,10 @@ __metadata:
     "@fortawesome/free-solid-svg-icons": "npm:^6.6.0"
     "@fortawesome/react-fontawesome": "npm:^0.2.2"
     "@mapbox/mapbox-gl-draw": "npm:~1.4.3"
+    "@openfeature/core": "npm:^1.4.0"
+    "@openfeature/flipt-web-provider": "npm:^0.1.0"
+    "@openfeature/react-sdk": "npm:^0.4.6"
+    "@openfeature/web-sdk": "npm:^1.2.4"
     "@testing-library/dom": "npm:^10.4.0"
     "@testing-library/jest-dom": "npm:^6.6.2"
     "@testing-library/react": "npm:^16.0.1"

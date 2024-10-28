@@ -20,6 +20,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import { FunctionComponent, useContext, useEffect, useState } from "react";
+import { useBooleanFlagValue } from "@openfeature/react-sdk";
 
 import { faCalendar, faClock } from "@fortawesome/free-regular-svg-icons";
 import logo from "assets/logo.svg";
@@ -38,6 +39,9 @@ const Navbar: FunctionComponent<{ isActive?: boolean }> = ({ isActive = false })
     "navbar-menu": true,
     "is-active": isMenuActive,
   });
+
+  const showResources = useBooleanFlagValue("show-resources", false);
+  const showTasks = useBooleanFlagValue("show-tasks", false);
 
   return (
     <nav className="navbar is-fixed-top is-hidden-print">
@@ -90,8 +94,8 @@ const Navbar: FunctionComponent<{ isActive?: boolean }> = ({ isActive = false })
             </div>
           </div>
           <JournalNavBar />
-          {/* <ResourcesNavBar />
-          <TasksNavBar /> */}
+          {showResources ? <ResourcesNavBar /> : <></>}
+          {showTasks ? <TasksNavBar /> : <></>}
           <MapNavBar />
         </div>
         <div className="navbar-end">
