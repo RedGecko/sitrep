@@ -7,6 +7,7 @@
 ### ⚙️  Other
 
 - *(cicd)* Auto-assign new issues - ([1e26064](https://github.com/f-eld-ch/sitrep/commit/1e260644c74cf6e1dd511185c6ef6d95a45f78af))
+- *(deps)* Bump pozil/auto-assign-issue from 1 to 2 ([#477](https://github.com/f-eld-ch/sitrep/issues/477)) - ([26d0f7d](https://github.com/f-eld-ch/sitrep/commit/26d0f7d3307c56150f294139729c6d1daa98bd6d))
 - *(deps)* Bump web-vitals from 4.2.3 to 4.2.4 in /ui ([#479](https://github.com/f-eld-ch/sitrep/issues/479)) - ([1ce53e1](https://github.com/f-eld-ch/sitrep/commit/1ce53e125e02b78d0809b5959950bf83d63fed80))
 - *(deps)* Bump i18next from 23.16.2 to 23.16.4 in /ui ([#483](https://github.com/f-eld-ch/sitrep/issues/483)) - ([0c0f711](https://github.com/f-eld-ch/sitrep/commit/0c0f711fb990878008e965c2266ef6933ff8a87b))
 - *(deps)* Bump i18next from 23.16.0 to 23.16.2 in /ui ([#474](https://github.com/f-eld-ch/sitrep/issues/474)) - ([f98a7d1](https://github.com/f-eld-ch/sitrep/commit/f98a7d1d0afcdb2a3bb208ee2706df0255d6f08f))
