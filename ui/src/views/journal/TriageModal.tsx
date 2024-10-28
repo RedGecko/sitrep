@@ -13,11 +13,13 @@ import { Message, MessageDivision, SaveMessageTriageData, SaveMessageTriageVars 
 import { NewForm as TaskNew } from "../measures/tasks";
 import { default as JournalMessage } from "./Message";
 import { GetJournalMessages, GetMessageForTriage, SaveMessageTriage } from "./graphql";
+import { useBooleanFlagValue } from "@openfeature/react-sdk";
 
 function Triage(props: { message: Message | undefined; setMessage: (message: Message | undefined) => void }) {
   const { message, setMessage } = props;
   const { journalId } = useParams();
   const { t } = useTranslation();
+  const showTasks = useBooleanFlagValue("show-tasks", false);
 
   const [loadMessage, { loading, error, data }] = useLazyQuery<TriageMessageData, TriageMessageVars>(
     GetMessageForTriage,
@@ -175,10 +177,12 @@ function Triage(props: { message: Message | undefined; setMessage: (message: Mes
                           </select>
                         </div>
                       </div>
-                      <div className="column">
-                        <h3 className="title is-size-5">{t("createNewTask")}</h3>
-                        <TaskNew />
-                      </div>
+                      {showTasks && (
+                        <div className="column">
+                          <h3 className="title is-size-5">{t("createNewTask")}</h3>
+                          <TaskNew />
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
