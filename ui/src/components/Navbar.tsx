@@ -74,7 +74,7 @@ const Navbar: FunctionComponent<{ isActive?: boolean }> = ({ isActive = false })
                 <span>{t("incident")}</span>
               </span>
             </NavLink>
-            <div className="navbar-dropdown is-boxed">
+            <div className="navbar-dropdown">
               <NavLink className={({ isActive }) => "navbar-item" + (isActive ? " is-active" : "")} to="/incident/list">
                 {t("overview")}
               </NavLink>
@@ -196,7 +196,7 @@ function UserNavBar() {
       <div className="navbar-link">
         <FontAwesomeIcon icon={faCog} />
       </div>
-      <div className="navbar-dropdown is-boxed is-right">
+      <div className="navbar-dropdown is-right">
         <VersionNavBar />
         <div className="navbar-item">
           <span className="icon-text is-flex-wrap-nowrap">
@@ -259,7 +259,7 @@ const JournalNavBar: FunctionComponent = () => {
           <span>{t("journal")}</span>
         </span>
       </NavLink>
-      <div className="navbar-dropdown is-boxed">
+      <div className="navbar-dropdown">
         <NavLink
           className={({ isActive }) => "navbar-item is-capitalized" + (isActive ? " is-active" : "")}
           end={true}
@@ -308,7 +308,7 @@ const TasksNavBar: FunctionComponent = () => {
           <span>{t("tasksRequestOrders")}</span>
         </span>
       </NavLink>
-      <div className="navbar-dropdown is-boxed">
+      <div className="navbar-dropdown">
         <NavLink
           className={({ isActive }) => "navbar-item" + (isActive ? " is-active" : "")}
           to={`/incident/${incidentId}/tasks`}
