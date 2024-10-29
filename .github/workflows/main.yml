@@ -11,6 +11,23 @@ on:
       - "main"
       - "develop"
 jobs:
+  featureflags:
+    runs-on: ubuntu-latest
+    name: "Validate & Push Feature Flags"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: flipt-io/setup-action@v0.1.0
+      - run: flipt validate
+      - name: Build and Push bundle
+        # only build and push feature flags from the develop branch
+        if: github.ref == 'refs/heads/develop'
+        env:
+          FLIPT_STORAGE_OCI_AUTHENTICATION_USERNAME: ${{ github.actor }}
+          FLIPT_STORAGE_OCI_AUTHENTICATION_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          flipt bundle build sitrep-featureflags:latest
+          flipt bundle push sitrep-featureflags:latest ghcr.io/f-eld-ch/sitrep/featureflags:develop
   build:
     runs-on: ubuntu-latest
     name: "Test and Build"

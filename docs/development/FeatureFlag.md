@@ -9,11 +9,20 @@ We intend to implement and use Feature Flags to enable continuous development an
 
 ## Sitrep Feature Flags Policy:
 1. Responsibility for each Feature Flag and adherence to this policy lies with the developer implementing it.
-2. Feature Flags shall only be implemented in frontend UI-elements, to enable or disable access to certain functionalities. 
+2. Feature Flags shall only be implemented in frontend UI-elements, to enable or disable access to certain functionalities.
 3. No Feature Flags must be implemented in back-end code. However, this does not apply to backend API endpoints needed for frontend Feature Flags.
 4. A list of all prior and currently active Feature Flags shall be kept (specifics tbd) and include at least the following information: intended Use Case, intended life-span, date implemented, date removed, @f-eld-ch/core-development member name.
-5. The intended life-span of every Feature Flag must not exceed 3 months as of integration of the Feature Flag. Furthermore, it must be appropriately documented in the code using line comments and in the list (point 4). 
+5. The intended life-span of every Feature Flag must not exceed 3 months as of integration of the Feature Flag. Furthermore, it must be appropriately documented in the code using line comments and in the list (point 4).
 6. In case an extension of the life-span is warranted (at least 2 members of the development-team concur), the life-span may be prolonged once by a maximum of 3 months. The extension must be documented in the list (point 4). After this, no further extensions must be made.
 7. If a Feature Flag is used for feature testing, the organization/user who requested the feature shall be the early-adopter for said feature. If no request was made, early-adopters are chosen by the development team.
 8. When a Feature is released to all users, the corresponding Feature Flag shall be removed within the next 7 days, regardless if the intended life-span is up or not.
 9. All members of @f-eld-ch/core-development must at all times have access to all features under Feature Flags irrespective of their status.
+
+
+## How to add new Feature Flags
+
+1. Update the feature flag file in the corresponding directory, e.g. ui/features.yaml according to the flipt documentation.
+2. Create a new PR and the syntax will be checked by the CI/CD pipeline.
+3. After the PR is merged, the feature flag container (ghcr.io/f-eld-ch/sitrep/featureflags:develop) will be build and automatically pulled by the flipt service.
+
+This means that if you want to use a new feature flag, create it first, make a PR and only then start the development works that depend on the feature flag.

@@ -23,7 +23,8 @@ import { UserState } from "types";
 import { UserContext } from "utils";
 import MessageSheet from "views/journal/MessageSheet";
 import { Layout, LayoutMarginLess } from "views/Layout";
-import { default as client } from "./client";
+import { default as client } from "client";
+import { Provider as FeatureFlagProvider } from "FeatureFlags";
 
 const Map = lazy(() => import("views/map"));
 
@@ -65,126 +66,128 @@ function App() {
   return (
     <UserContext.Provider value={userState}>
       <ApolloProvider client={client}>
-        <Router>
-          <Routes>
-            <Route path="/incident">
-              <Route
-                path="list"
-                element={
-                  <Layout>
-                    <IncidentList />
-                  </Layout>
-                }
-              />
-              <Route
-                path="new"
-                element={
-                  <Layout>
-                    <IncidentNew />
-                  </Layout>
-                }
-              />
-
-              <Route path=":incidentId">
+        <FeatureFlagProvider>
+          <Router>
+            <Routes>
+              <Route path="/incident">
                 <Route
-                  path="edit"
+                  path="list"
                   element={
                     <Layout>
-                      <IncidentEditor />
+                      <IncidentList />
+                    </Layout>
+                  }
+                />
+                <Route
+                  path="new"
+                  element={
+                    <Layout>
+                      <IncidentNew />
                     </Layout>
                   }
                 />
 
-                <Route path="journal">
+                <Route path=":incidentId">
                   <Route
-                    path="view"
+                    path="edit"
                     element={
                       <Layout>
-                        <JournalOverview />
+                        <IncidentEditor />
+                      </Layout>
+                    }
+                  />
+
+                  <Route path="journal">
+                    <Route
+                      path="view"
+                      element={
+                        <Layout>
+                          <JournalOverview />
+                        </Layout>
+                      }
+                    />
+                    <Route
+                      path="new"
+                      element={
+                        <Layout>
+                          <JournalNew />
+                        </Layout>
+                      }
+                    />
+                    <Route
+                      path=":journalId/edit"
+                      element={
+                        <Layout>
+                          <JournalEditor />
+                        </Layout>
+                      }
+                    />
+                    <Route
+                      path=":journalId"
+                      element={
+                        <Layout>
+                          <JournalMessageList showControls={false} autoScroll={true} />
+                        </Layout>
+                      }
+                    />
+                    <Route
+                      path=":journalId/messages/:messageId"
+                      element={
+                        <Layout>
+                          <MessageSheet />
+                        </Layout>
+                      }
+                    />
+                  </Route>
+
+                  <Route
+                    path="resources"
+                    element={
+                      <Layout>
+                        <ResourcesList />
                       </Layout>
                     }
                   />
                   <Route
-                    path="new"
+                    path="map"
+                    element={
+                      <LayoutMarginLess>
+                        <Suspense fallback={<Spinner />}>
+                          <Map />
+                        </Suspense>
+                      </LayoutMarginLess>
+                    }
+                  />
+                  <Route
+                    path="tasks"
                     element={
                       <Layout>
-                        <JournalNew />
+                        <TaskList />
                       </Layout>
                     }
                   />
                   <Route
-                    path=":journalId/edit"
+                    path="requests"
                     element={
                       <Layout>
-                        <JournalEditor />
+                        <RequestList />
                       </Layout>
                     }
                   />
                   <Route
-                    path=":journalId"
+                    path="soma"
                     element={
                       <Layout>
-                        <JournalMessageList showControls={false} autoScroll={true} />
-                      </Layout>
-                    }
-                  />
-                  <Route
-                    path=":journalId/messages/:messageId"
-                    element={
-                      <Layout>
-                        <MessageSheet />
+                        <ImmediateMeasuresList />
                       </Layout>
                     }
                   />
                 </Route>
-
-                <Route
-                  path="resources"
-                  element={
-                    <Layout>
-                      <ResourcesList />
-                    </Layout>
-                  }
-                />
-                <Route
-                  path="map"
-                  element={
-                    <LayoutMarginLess>
-                      <Suspense fallback={<Spinner />}>
-                        <Map />
-                      </Suspense>
-                    </LayoutMarginLess>
-                  }
-                />
-                <Route
-                  path="tasks"
-                  element={
-                    <Layout>
-                      <TaskList />
-                    </Layout>
-                  }
-                />
-                <Route
-                  path="requests"
-                  element={
-                    <Layout>
-                      <RequestList />
-                    </Layout>
-                  }
-                />
-                <Route
-                  path="soma"
-                  element={
-                    <Layout>
-                      <ImmediateMeasuresList />
-                    </Layout>
-                  }
-                />
               </Route>
-            </Route>
-            <Route path="/" element={<Navigate to="/incident/list" />} />
-          </Routes>
-        </Router>
+              <Route path="/" element={<Navigate to="/incident/list" />} />
+            </Routes>
+          </Router>
+        </FeatureFlagProvider>
       </ApolloProvider>
     </UserContext.Provider>
   );
