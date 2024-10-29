@@ -1,5 +1,9 @@
 ## [unreleased]
 
+### ⛰️  Features
+
+- *(feature-flags)* Use flipt as feature flag service ([#486](https://github.com/f-eld-ch/sitrep/issues/486)) - ([fad5799](https://github.com/f-eld-ch/sitrep/commit/fad57995b3c265165cb2b872e14ee7bc563c1495))
+
 ### 🐛 Bug Fixes
 
 - *(ui)* Navbar dropdowns should better align with main navbar ([#485](https://github.com/f-eld-ch/sitrep/issues/485)) - ([3ad0a37](https://github.com/f-eld-ch/sitrep/commit/3ad0a371cc92bba0ee41bf580f0bd17d04b052c5))
