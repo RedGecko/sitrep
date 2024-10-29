@@ -27,7 +27,6 @@ const Provider = (props: PropsWithChildren) => {
 
   useEffect(() => {
     const fliptProvider = new FliptWebProvider("sitrep-ui", { url: "https://flipt.sitrep.ch" });
-    OpenFeature.setLogger(console);
     OpenFeature.setProvider("local", new InMemoryProvider(localFlagConfig));
     OpenFeature.setProvider(fliptProvider);
   }, []);
@@ -39,7 +38,6 @@ const Provider = (props: PropsWithChildren) => {
       email: userState.email,
     };
     OpenFeature.setContext(context);
-    console.log("setting context", context);
   }, [userState]);
 
   return <OpenFeatureProvider>{children}</OpenFeatureProvider>;

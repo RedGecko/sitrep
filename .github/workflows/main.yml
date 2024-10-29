@@ -20,7 +20,8 @@ jobs:
       - uses: flipt-io/setup-action@v0.1.0
       - run: flipt validate
       - name: Build and Push bundle
-        #if: github.ref == 'refs/heads/develop'
+        # only build and push feature flags from the develop branch
+        if: github.ref == 'refs/heads/develop'
         env:
           FLIPT_STORAGE_OCI_AUTHENTICATION_USERNAME: ${{ github.actor }}
           FLIPT_STORAGE_OCI_AUTHENTICATION_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
