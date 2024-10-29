@@ -38,6 +38,11 @@ const Provider = (props: PropsWithChildren) => {
       email: userState.email,
     };
     OpenFeature.setContext(context);
+
+    return () => {
+      console.log("closing openfeature provider");
+      OpenFeature.close();
+    };
   }, [userState]);
 
   return <OpenFeatureProvider>{children}</OpenFeatureProvider>;
