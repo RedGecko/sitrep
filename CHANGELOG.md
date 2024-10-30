@@ -1,5 +1,12 @@
 ## [unreleased]
 
+### ⚙️  Other
+
+- *(deps)* Bump @openfeature/core from 1.4.0 to 1.5.0 in /ui ([#493](https://github.com/f-eld-ch/sitrep/issues/493)) - ([753fe14](https://github.com/f-eld-ch/sitrep/commit/753fe145042d536aacb36d9abeee18a474514c62))
+
+
+## [24.10.2](https://github.com/f-eld-ch/sitrep/compare/v24.10.1..v24.10.2) - 2024-10-29
+
 ### ⛰️  Features
 
 - *(feature-flags)* Use flipt as feature flag service ([#486](https://github.com/f-eld-ch/sitrep/issues/486)) - ([fad5799](https://github.com/f-eld-ch/sitrep/commit/fad57995b3c265165cb2b872e14ee7bc563c1495))
