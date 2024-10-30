@@ -2,6 +2,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump @openfeature/web-sdk from 1.2.4 to 1.3.1 in /ui ([#491](https://github.com/f-eld-ch/sitrep/issues/491)) - ([6b0aa34](https://github.com/f-eld-ch/sitrep/commit/6b0aa34ee409a6829b728258566a5a5704cd87a2))
 - *(deps)* Bump @openfeature/core from 1.4.0 to 1.5.0 in /ui ([#493](https://github.com/f-eld-ch/sitrep/issues/493)) - ([753fe14](https://github.com/f-eld-ch/sitrep/commit/753fe145042d536aacb36d9abeee18a474514c62))
 
 
