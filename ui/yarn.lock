@@ -3261,13 +3261,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openfeature/react-sdk@npm:^0.4.6":
-  version: 0.4.6
-  resolution: "@openfeature/react-sdk@npm:0.4.6"
+"@openfeature/react-sdk@npm:^0.4.8":
+  version: 0.4.8
+  resolution: "@openfeature/react-sdk@npm:0.4.8"
   peerDependencies:
-    "@openfeature/web-sdk": ^1.2.2
+    "@openfeature/web-sdk": ^1.3.0
     react: ">=16.8.0"
-  checksum: 10/bac78bc4e201739ae2903f7790195629566d5ace054cc30404d691838d4806b474ae98ae8bb8b87bbfdd015efa1ef6f9e8ffdeee9160b197d278536da3ffe7c1
+  checksum: 10/2cae09c44a1396e07e9f633bc25a18a4613a815cfb0f853ed6f2d538dfc26960efcc2e236cae7322d938d3148ca24d8f70d4b8a49d17980b36269ef429ccd389
   languageName: node
   linkType: hard
 
@@ -12694,7 +12694,7 @@ __metadata:
     "@mapbox/mapbox-gl-draw": "npm:~1.4.3"
     "@openfeature/core": "npm:^1.5.0"
     "@openfeature/flipt-web-provider": "npm:^0.1.0"
-    "@openfeature/react-sdk": "npm:^0.4.6"
+    "@openfeature/react-sdk": "npm:^0.4.8"
     "@openfeature/web-sdk": "npm:^1.3.1"
     "@testing-library/dom": "npm:^10.4.0"
     "@testing-library/jest-dom": "npm:^6.6.2"
