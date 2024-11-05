@@ -2,6 +2,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump flipt-io/setup-action from 0.1.0 to 0.2.0 ([#494](https://github.com/f-eld-ch/sitrep/issues/494)) - ([c6480ca](https://github.com/f-eld-ch/sitrep/commit/c6480caf2965b163fc039a59afc23d18a38268fb))
 - *(deps)* Bump @openfeature/react-sdk from 0.4.6 to 0.4.8 in /ui ([#492](https://github.com/f-eld-ch/sitrep/issues/492)) - ([70f78e8](https://github.com/f-eld-ch/sitrep/commit/70f78e81f0537fd8f425f1376f5a2a9bc3bd5891))
 - *(deps)* Bump @openfeature/web-sdk from 1.2.4 to 1.3.1 in /ui ([#491](https://github.com/f-eld-ch/sitrep/issues/491)) - ([6b0aa34](https://github.com/f-eld-ch/sitrep/commit/6b0aa34ee409a6829b728258566a5a5704cd87a2))
 - *(deps)* Bump @openfeature/core from 1.4.0 to 1.5.0 in /ui ([#493](https://github.com/f-eld-ch/sitrep/issues/493)) - ([753fe14](https://github.com/f-eld-ch/sitrep/commit/753fe145042d536aacb36d9abeee18a474514c62))
