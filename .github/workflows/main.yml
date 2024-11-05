@@ -17,7 +17,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: flipt-io/setup-action@v0.1.0
+      - uses: flipt-io/setup-action@v0.2.0
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: flipt validate
       - name: Build and Push bundle
         # only build and push feature flags from the develop branch
