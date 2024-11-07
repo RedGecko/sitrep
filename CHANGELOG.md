@@ -1,3 +1,10 @@
+## [unreleased]
+
+### 🐛 Bug Fixes
+
+- *(ui)* 'SitRep' text changed in footer - ([9a57445](https://github.com/f-eld-ch/sitrep/commit/9a57445a3b0f46fd14270d230d7726a044b4593a))
+
+
 ## [24.11.0](https://github.com/f-eld-ch/sitrep/compare/v24.10.2..v24.11.0) - 2024-11-07
 
 ### 🐛 Bug Fixes
