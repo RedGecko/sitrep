@@ -67,7 +67,7 @@ services:
   postgres:
     environment:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-    image: postgis/postgis:14-3.2
+    image: postgres:16
     networks:
       default: null
     restart: always
@@ -82,8 +82,7 @@ services:
         published: "5432"
         protocol: tcp
   dex:
-    image: docker.io/dexidp/dex:v2.38.0
-    restart: always
+    image: docker.io/dexidp/dex:latest
     environment:
       OAUTH2_PROXY_CLIENT_ID: ${OAUTH2_PROXY_CLIENT_ID}
       OAUTH2_PROXY_CLIENT_SECRET: ${OAUTH2_PROXY_CLIENT_SECRET}
@@ -97,7 +96,7 @@ services:
       - "./example/dexidp/config-demo.yaml:/etc/dex/config-demo.yaml:Z"
       - type: volume
         source: dex_data
-        target: /var/sqlite/dex
+        target: /var/dex
         volume: {}
     ports:
       - mode: ingress
