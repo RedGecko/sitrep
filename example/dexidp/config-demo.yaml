@@ -3,7 +3,7 @@ issuer: {{ getenv "DEX_ISSUER" "http://127.0.0.1:5556/dex" }}
 storage:
   type: sqlite3
   config:
-    file: var/sqlite/dex/dex.db
+    file: var/dex/dex.db
 
 web:
   http: {{ getenv "DEX_WEB_HTTP" "0.0.0.0:5556" }}
