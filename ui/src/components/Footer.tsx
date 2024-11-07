@@ -18,7 +18,7 @@ function Footer() {
               <FontAwesomeIcon icon={faGithub} />
             </span>
             <span>
-              <p className="is-size-7 is-family-monospace">Sitrep</p>
+              <p className="has-text-dark">SitRep</p>
             </span>
           </span>
         </a>
