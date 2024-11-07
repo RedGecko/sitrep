@@ -1,5 +1,9 @@
 ## [unreleased]
 
+### 🐛 Bug Fixes
+
+- *(journal)* Properly validate required fields ([#499](https://github.com/f-eld-ch/sitrep/issues/499)) - ([291d918](https://github.com/f-eld-ch/sitrep/commit/291d918b87ab57699a68b0ac02949a68aa89a292))
+
 ### ⚙️  Other
 
 - *(deps)* Bump uuid from 10.0.0 to 11.0.1 in /ui ([#490](https://github.com/f-eld-ch/sitrep/issues/490)) - ([9500e26](https://github.com/f-eld-ch/sitrep/commit/9500e260d4aa7fce1cc6fbadf0cdacf5ec066ab7))
