@@ -2,6 +2,7 @@
 
 ### 🐛 Bug Fixes
 
+- *(ui)* Text color in footer changed to be adaptive ([#500](https://github.com/f-eld-ch/sitrep/issues/500)) - ([21a9a60](https://github.com/f-eld-ch/sitrep/commit/21a9a60c90a963b921b2ceb5655b982e89a7c594))
 - *(ui)* 'SitRep' text changed in footer - ([9a57445](https://github.com/f-eld-ch/sitrep/commit/9a57445a3b0f46fd14270d230d7726a044b4593a))
 
 ### ⚙️  Other
