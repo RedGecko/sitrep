@@ -164,7 +164,7 @@ const RadioChannelDetailInput = () => {
 };
 
 const SaveButton = () => {
-  const { dispatch } = useEditorContext();
+  const { state, dispatch } = useEditorContext();
   return (
     <div className="control">
       <button
@@ -173,6 +173,7 @@ const SaveButton = () => {
           e.preventDefault();
           dispatch({ type: "save" });
         }}
+        disabled={state.content === "" || state.sender === "" || state.receiver === ""}
       >
         {t("save")}
       </button>

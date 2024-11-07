@@ -69,6 +69,7 @@ type Action =
   | { type: "set_content"; content: string }
   | { type: "set_time"; time: Date | undefined }
   | { type: "save" }
+  | { type: "save_error" }
   | { type: "set_media_detail"; detail: MediaDetail }
   | { type: "set_autofill_details"; detail: AutofillDetail };
 type Dispatch = (action: Action) => void;
@@ -109,6 +110,9 @@ function Editor() {
       // reset the form values
       dispatch({ type: "clear" });
     },
+    onError() {
+      dispatch({ type: "save_error" });
+    },
     refetchQueries: [{ query: GetJournalMessages, variables: { journalId: journalId } }],
   });
 
@@ -117,6 +121,9 @@ function Editor() {
       // reset the form values
       dispatch({ type: "clear" });
     },
+    onError() {
+      dispatch({ type: "save_error" });
+    },
     refetchQueries: [{ query: GetJournalMessages, variables: { journalId: journalId } }],
   });
 
@@ -124,6 +131,9 @@ function Editor() {
     switch (action.type) {
       case "save": {
         return Object.assign({}, state, { saving: true });
+      }
+      case "save_error": {
+        return Object.assign({}, state, { saving: false });
       }
       case "set_sender": {
         return Object.assign({}, state, { sender: action.sender });
