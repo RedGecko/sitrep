@@ -4,6 +4,10 @@
 
 - *(ui)* 'SitRep' text changed in footer - ([9a57445](https://github.com/f-eld-ch/sitrep/commit/9a57445a3b0f46fd14270d230d7726a044b4593a))
 
+### ⚙️  Other
+
+- *(dev-env)* Fix local docker compose files - ([5c5d823](https://github.com/f-eld-ch/sitrep/commit/5c5d8238a7c656a0ad275c0e432ede62a4fb2d02))
+
 ### Build
 
 - *(dev)* Remove idea files - ([a46ab03](https://github.com/f-eld-ch/sitrep/commit/a46ab037aeb5199bec3ff065014f008b7d3237b4))
