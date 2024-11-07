@@ -1,5 +1,12 @@
 ## [unreleased]
 
+### ⚙️  Other
+
+- *(cicd)* Fix flipt-io/setup-actions - ([03fa621](https://github.com/f-eld-ch/sitrep/commit/03fa6212bffb54aa3e53004b3c1e42e74c34847b))
+
+
+## [24.11.0](https://github.com/f-eld-ch/sitrep/compare/v24.10.2..v24.11.0) - 2024-11-07
+
 ### 🐛 Bug Fixes
 
 - *(journal)* Properly validate required fields ([#499](https://github.com/f-eld-ch/sitrep/issues/499)) - ([291d918](https://github.com/f-eld-ch/sitrep/commit/291d918b87ab57699a68b0ac02949a68aa89a292))
