@@ -4,6 +4,10 @@
 
 - *(ui)* 'SitRep' text changed in footer - ([9a57445](https://github.com/f-eld-ch/sitrep/commit/9a57445a3b0f46fd14270d230d7726a044b4593a))
 
+### Build
+
+- *(dev)* Remove idea files - ([a46ab03](https://github.com/f-eld-ch/sitrep/commit/a46ab037aeb5199bec3ff065014f008b7d3237b4))
+
 
 ## [24.11.0](https://github.com/f-eld-ch/sitrep/compare/v24.10.2..v24.11.0) - 2024-11-07
 
