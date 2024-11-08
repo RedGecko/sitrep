@@ -7,6 +7,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump @apollo/client from 3.11.8 to 3.11.9 in /ui ([#501](https://github.com/f-eld-ch/sitrep/issues/501)) - ([81c7b2c](https://github.com/f-eld-ch/sitrep/commit/81c7b2ce99d11ba8202c7e5cf033bde3973efec0))
 - *(dev-env)* Fix local docker compose files - ([5c5d823](https://github.com/f-eld-ch/sitrep/commit/5c5d8238a7c656a0ad275c0e432ede62a4fb2d02))
 
 ### Build
