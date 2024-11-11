@@ -7,6 +7,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump i18next from 23.16.4 to 23.16.5 in /ui ([#505](https://github.com/f-eld-ch/sitrep/issues/505)) - ([615213f](https://github.com/f-eld-ch/sitrep/commit/615213f559c84a9b3e6741f9047f54303385183e))
 - *(deps)* Bump react-i18next from 15.1.0 to 15.1.1 in /ui ([#503](https://github.com/f-eld-ch/sitrep/issues/503)) - ([a719574](https://github.com/f-eld-ch/sitrep/commit/a719574ddbb2510bc2b7a51134c93f50aefee53d))
 - *(deps)* Bump react-router-dom from 6.27.0 to 6.28.0 in /ui ([#502](https://github.com/f-eld-ch/sitrep/issues/502)) - ([b641d5a](https://github.com/f-eld-ch/sitrep/commit/b641d5a8be28e5f623c33251678de25859e3ab12))
 - *(deps)* Bump @openfeature/web-sdk from 1.3.1 to 1.3.2 in /ui ([#504](https://github.com/f-eld-ch/sitrep/issues/504)) - ([ec14e62](https://github.com/f-eld-ch/sitrep/commit/ec14e626bdf4cb50b36f51e8932f4526f6b65a1f))
