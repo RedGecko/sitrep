@@ -7,6 +7,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump uuid from 11.0.2 to 11.0.3 in /ui ([#507](https://github.com/f-eld-ch/sitrep/issues/507)) - ([df9e7d6](https://github.com/f-eld-ch/sitrep/commit/df9e7d6a0ea60b485c2a3b5d2ea9e07cd6edb117))
 - *(deps)* Bump i18next from 23.16.4 to 23.16.5 in /ui ([#505](https://github.com/f-eld-ch/sitrep/issues/505)) - ([615213f](https://github.com/f-eld-ch/sitrep/commit/615213f559c84a9b3e6741f9047f54303385183e))
 - *(deps)* Bump react-i18next from 15.1.0 to 15.1.1 in /ui ([#503](https://github.com/f-eld-ch/sitrep/issues/503)) - ([a719574](https://github.com/f-eld-ch/sitrep/commit/a719574ddbb2510bc2b7a51134c93f50aefee53d))
 - *(deps)* Bump react-router-dom from 6.27.0 to 6.28.0 in /ui ([#502](https://github.com/f-eld-ch/sitrep/issues/502)) - ([b641d5a](https://github.com/f-eld-ch/sitrep/commit/b641d5a8be28e5f623c33251678de25859e3ab12))
