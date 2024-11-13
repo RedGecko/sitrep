@@ -1811,7 +1811,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.14.0, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.8.4":
   version: 7.20.13
   resolution: "@babel/runtime@npm:7.20.13"
   dependencies:
@@ -4857,14 +4857,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@watergis/maplibre-gl-export@npm:~3.8.3":
-  version: 3.8.3
-  resolution: "@watergis/maplibre-gl-export@npm:3.8.3"
+"@watergis/maplibre-gl-export@npm:~3.8.4":
+  version: 3.8.4
+  resolution: "@watergis/maplibre-gl-export@npm:3.8.4"
   dependencies:
-    js-loading-overlay: "npm:^1.2.0"
-    jspdf: "npm:^2.5.1"
-    maplibre-gl: "npm:^4.6.0"
-  checksum: 10/62312a15262209baba69876059345abd71e1b27b38c320b136b2be3ff6ef42a0aca728306a547bfcb12d4b1cf09f3e509a180c9faa75ea8414202213fdc65115
+    jspdf: "npm:^2.5.2"
+    maplibre-gl: "npm:^4.7.1"
+  checksum: 10/80a5bc7e9887a1e45fa8483535cb32ad9ccaea10e08cbd02dd9948e759daf7129d2fe4b555a69583609b9cf9967664b41a6def8a0924c35af37c536608cf91f7
   languageName: node
   linkType: hard
 
@@ -6491,10 +6490,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dompurify@npm:^2.2.0":
-  version: 2.5.6
-  resolution: "dompurify@npm:2.5.6"
-  checksum: 10/ef5fdc075ee448246b2b54bf8c7e2608dbaa176d9366137d2ff4e4ed4e580a2e913d5a58f1d3609f63d67871574e5fdcce534b185a1b1efdd8b931cd843b045a
+"dompurify@npm:^2.5.4":
+  version: 2.5.7
+  resolution: "dompurify@npm:2.5.7"
+  checksum: 10/b150ca1e28083252cd51097162dc96cb45203f7e2af1fbaa8ef32b4f4d6b605e4aa8915190d38bd0635cbbf14d13a200138cd3ec1b084096819b14c718355122
   languageName: node
   linkType: hard
 
@@ -7407,10 +7406,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fflate@npm:^0.4.8":
-  version: 0.4.8
-  resolution: "fflate@npm:0.4.8"
-  checksum: 10/c0c75029bcbefd0b47cede4ad2a3698f571e38d3d93dfbb96d744c655ec3bf5e31111044c2c01fa3965109874f5be8b5a6b3686b958392693689665cbabf3ece
+"fflate@npm:^0.8.1":
+  version: 0.8.2
+  resolution: "fflate@npm:0.8.2"
+  checksum: 10/2bd26ba6d235d428de793c6a0cd1aaa96a06269ebd4e21b46c8fd1bd136abc631acf27e188d47c3936db090bf3e1ede11d15ce9eae9bffdc4bfe1b9dc66ca9cb
   languageName: node
   linkType: hard
 
@@ -9589,13 +9588,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-loading-overlay@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "js-loading-overlay@npm:1.2.0"
-  checksum: 10/0e06702b56ca58e2d7dfe16b71f29506fce8bd94cbb7f8ef41b656bcd514f872afd8c9fcfb3b51ca4f2490bdfd8a436a4249db091611952e918c5640a6754fe5
-  languageName: node
-  linkType: hard
-
 "js-tokens@npm:^3.0.0 || ^4.0.0, js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -9770,17 +9762,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jspdf@npm:^2.5.1":
-  version: 2.5.1
-  resolution: "jspdf@npm:2.5.1"
+"jspdf@npm:^2.5.2":
+  version: 2.5.2
+  resolution: "jspdf@npm:2.5.2"
   dependencies:
-    "@babel/runtime": "npm:^7.14.0"
+    "@babel/runtime": "npm:^7.23.2"
     atob: "npm:^2.1.2"
     btoa: "npm:^1.2.1"
     canvg: "npm:^3.0.6"
     core-js: "npm:^3.6.0"
-    dompurify: "npm:^2.2.0"
-    fflate: "npm:^0.4.8"
+    dompurify: "npm:^2.5.4"
+    fflate: "npm:^0.8.1"
     html2canvas: "npm:^1.0.0-rc.5"
   dependenciesMeta:
     canvg:
@@ -9791,7 +9783,7 @@ __metadata:
       optional: true
     html2canvas:
       optional: true
-  checksum: 10/3a1efc6205c7fcf0e84697dc90277a8aee28274f0ea39c12af38d3302985c359acfe6ee9419ed1cfc7fbb7a59547e3d4cad8dedf6248fc4af7e2087d4a8bb448
+  checksum: 10/8e82c5b342c99bf7a1ac2470a01b2f5a9e6638749704b89aef858daad37054160ce41081913bbc2f4a8f76fb848bc7c4296f8fa5d781de94926bc1b8d97c2238
   languageName: node
   linkType: hard
 
@@ -12750,7 +12742,7 @@ __metadata:
     "@vite-pwa/assets-generator": "npm:^0.2.6"
     "@vitejs/plugin-react-swc": "npm:^3.7.1"
     "@vitest/coverage-v8": "npm:^2.1.4"
-    "@watergis/maplibre-gl-export": "npm:~3.8.3"
+    "@watergis/maplibre-gl-export": "npm:~3.8.4"
     bulma: "npm:^1.0.2"
     classnames: "npm:^2.5.1"
     dayjs: "npm:^1.11.13"
