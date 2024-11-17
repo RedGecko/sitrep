@@ -7,6 +7,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump @eslint/plugin-kit ([#513](https://github.com/f-eld-ch/sitrep/issues/513)) - ([e3e283c](https://github.com/f-eld-ch/sitrep/commit/e3e283cfcaaf87750eef867805ed0ce668de4eec))
 - *(deps)* Bump @watergis/maplibre-gl-export in /ui ([#510](https://github.com/f-eld-ch/sitrep/issues/510)) - ([9dc556f](https://github.com/f-eld-ch/sitrep/commit/9dc556f03ca4319154bb044e95d99d765dc23383))
 - *(deps)* Bump @apollo/client from 3.11.9 to 3.11.10 in /ui ([#508](https://github.com/f-eld-ch/sitrep/issues/508)) - ([a238bdf](https://github.com/f-eld-ch/sitrep/commit/a238bdfa833d52623bd991858744d83e57270a0b))
 - *(deps)* Bump uuid from 11.0.2 to 11.0.3 in /ui ([#507](https://github.com/f-eld-ch/sitrep/issues/507)) - ([df9e7d6](https://github.com/f-eld-ch/sitrep/commit/df9e7d6a0ea60b485c2a3b5d2ea9e07cd6edb117))
