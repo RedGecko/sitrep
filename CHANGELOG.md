@@ -7,6 +7,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump i18next from 23.16.5 to 23.16.6 in /ui ([#518](https://github.com/f-eld-ch/sitrep/issues/518)) - ([7bbc9ad](https://github.com/f-eld-ch/sitrep/commit/7bbc9ad2f1483c24094bb2dc2a48e50302cb1045))
 - *(deps)* Bump cross-spawn ([#514](https://github.com/f-eld-ch/sitrep/issues/514)) - ([faa2ef8](https://github.com/f-eld-ch/sitrep/commit/faa2ef882bf1bddc9cc459ca515aa8aaac391d58))
 - *(deps)* Bump @eslint/plugin-kit ([#513](https://github.com/f-eld-ch/sitrep/issues/513)) - ([e3e283c](https://github.com/f-eld-ch/sitrep/commit/e3e283cfcaaf87750eef867805ed0ce668de4eec))
 - *(deps)* Bump @watergis/maplibre-gl-export in /ui ([#510](https://github.com/f-eld-ch/sitrep/issues/510)) - ([9dc556f](https://github.com/f-eld-ch/sitrep/commit/9dc556f03ca4319154bb044e95d99d765dc23383))
