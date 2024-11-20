@@ -7,6 +7,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump i18next from 23.16.6 to 23.16.8 in /ui ([#524](https://github.com/f-eld-ch/sitrep/issues/524)) - ([141f3e2](https://github.com/f-eld-ch/sitrep/commit/141f3e2e4510c47ecab5b866276ff7a9581cf44b))
 - *(deps)* Upgrade hasura to v2.44.0-ce ([#522](https://github.com/f-eld-ch/sitrep/issues/522)) - ([066129b](https://github.com/f-eld-ch/sitrep/commit/066129bfe3003c32d20dc564f697112b33251500))
 - *(deps)* Bump i18next from 23.16.5 to 23.16.6 in /ui ([#518](https://github.com/f-eld-ch/sitrep/issues/518)) - ([7bbc9ad](https://github.com/f-eld-ch/sitrep/commit/7bbc9ad2f1483c24094bb2dc2a48e50302cb1045))
 - *(deps)* Bump cross-spawn ([#514](https://github.com/f-eld-ch/sitrep/issues/514)) - ([faa2ef8](https://github.com/f-eld-ch/sitrep/commit/faa2ef882bf1bddc9cc459ca515aa8aaac391d58))
