@@ -18,6 +18,10 @@ updates:
         update-types:
           - "minor"
           - "patch"       
+      fontawesome:
+        applies-to: version-updates
+        patterns:
+          - "@fortawesome*"
     labels:
       - "javascript"
       - "dependencies"
