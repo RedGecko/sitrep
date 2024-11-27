@@ -480,7 +480,10 @@ Details:
 
 ## New Contributors ❤️
 
+* @nimdanitro made their first contribution
 * @weblate made their first contribution
+* @dependabot[bot] made their first contribution
+* @lukastresch made their first contribution
 * @snyk-bot made their first contribution
 
 Made with ♥️  in Switzerland by F-ELD
