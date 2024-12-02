@@ -2448,10 +2448,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flipt-io/flipt-client-browser@npm:^0.0.17":
-  version: 0.0.17
-  resolution: "@flipt-io/flipt-client-browser@npm:0.0.17"
-  checksum: 10/284e5924b3756efd63ae5a3902d54534cd1266463557015b13b00822cf6fc10ee058d6634966519982326ec13e7423f08e65bdd61ed9a009a3bff75eef208d83
+"@flipt-io/flipt-client-browser@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@flipt-io/flipt-client-browser@npm:0.3.1"
+  checksum: 10/172d7acd5d6d6bd2888db32161160f73c5470167b318966616faafd37efebcea9efd909b7e9c6eae333cbaf082e5101ffc4da7a657c3e362d2a6ebfb223ccb66
   languageName: node
   linkType: hard
 
@@ -3417,15 +3417,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openfeature/flipt-web-provider@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@openfeature/flipt-web-provider@npm:0.1.0"
+"@openfeature/flipt-web-provider@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@openfeature/flipt-web-provider@npm:0.1.1"
   dependencies:
-    "@flipt-io/flipt-client-browser": "npm:^0.0.17"
+    "@flipt-io/flipt-client-browser": "npm:^0.3.1"
     tslib: "npm:^2.3.0"
   peerDependencies:
     "@openfeature/web-sdk": ^1.0.0
-  checksum: 10/d9d80e2e343f77898639b29aee6bdcf2e65ef82cb4b7d350122481b31e30c668cb175e779edbcf51d70b78add960eb7399c976b52584bebf904e0e5863eb7fe1
+  checksum: 10/3f29601d149928bc6d3892b3a80cdbe17f328276c5fdc562a36dd51017be0e4ade7a1aebbd046428d7cad76320fda05fcbcc981aa837c62d9e9c55c5bb33e182
   languageName: node
   linkType: hard
 
@@ -12997,7 +12997,7 @@ __metadata:
     "@fortawesome/react-fontawesome": "npm:^0.2.2"
     "@mapbox/mapbox-gl-draw": "npm:~1.4.3"
     "@openfeature/core": "npm:^1.5.0"
-    "@openfeature/flipt-web-provider": "npm:^0.1.0"
+    "@openfeature/flipt-web-provider": "npm:^0.1.1"
     "@openfeature/react-sdk": "npm:^0.4.8"
     "@openfeature/web-sdk": "npm:^1.3.2"
     "@testing-library/dom": "npm:^10.4.0"
