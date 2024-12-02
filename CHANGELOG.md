@@ -7,6 +7,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump @openfeature/flipt-web-provider in /ui ([#540](https://github.com/f-eld-ch/sitrep/issues/540)) - ([086850a](https://github.com/f-eld-ch/sitrep/commit/086850a68f6ad7829b40e108fa7034cccfdc167c))
 - *(deps)* Bump the fontawesome group in /ui with 4 updates ([#529](https://github.com/f-eld-ch/sitrep/issues/529)) - ([689fdfc](https://github.com/f-eld-ch/sitrep/commit/689fdfcd649b0ee8c868f82a99b821bb4ec39374))
 - *(deps)* Bump i18next from 23.16.6 to 23.16.8 in /ui ([#524](https://github.com/f-eld-ch/sitrep/issues/524)) - ([141f3e2](https://github.com/f-eld-ch/sitrep/commit/141f3e2e4510c47ecab5b866276ff7a9581cf44b))
 - *(deps)* Upgrade hasura to v2.44.0-ce ([#522](https://github.com/f-eld-ch/sitrep/issues/522)) - ([066129b](https://github.com/f-eld-ch/sitrep/commit/066129bfe3003c32d20dc564f697112b33251500))
