@@ -7,6 +7,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump react-i18next from 15.1.1 to 15.1.3 in /ui ([#538](https://github.com/f-eld-ch/sitrep/issues/538)) - ([c190fae](https://github.com/f-eld-ch/sitrep/commit/c190fae480c6dc549d362346e5ec814ef366aa73))
 - *(deps)* Bump @openfeature/flipt-web-provider in /ui ([#540](https://github.com/f-eld-ch/sitrep/issues/540)) - ([086850a](https://github.com/f-eld-ch/sitrep/commit/086850a68f6ad7829b40e108fa7034cccfdc167c))
 - *(deps)* Bump the fontawesome group in /ui with 4 updates ([#529](https://github.com/f-eld-ch/sitrep/issues/529)) - ([689fdfc](https://github.com/f-eld-ch/sitrep/commit/689fdfcd649b0ee8c868f82a99b821bb4ec39374))
 - *(deps)* Bump i18next from 23.16.6 to 23.16.8 in /ui ([#524](https://github.com/f-eld-ch/sitrep/issues/524)) - ([141f3e2](https://github.com/f-eld-ch/sitrep/commit/141f3e2e4510c47ecab5b866276ff7a9581cf44b))
