@@ -40,6 +40,7 @@ import LayerControl from "./controls/LayerControl";
 import MapboxDraw from "@mapbox/mapbox-gl-draw";
 import maplibregl from "maplibre-gl";
 import classNames from "classnames";
+import SearchControl from "./controls/Searchbox";
 
 const modes = {
   ...MapboxDraw.modes,
@@ -77,6 +78,7 @@ function MapView() {
           reuseMaps={false}
           RTLTextPlugin={undefined}
         >
+          <SearchControl />
           <AttributionControl position="bottom-left" compact={true} />
           {/* All Map Controls */}
           <FullscreenControl position={"top-left"} />
