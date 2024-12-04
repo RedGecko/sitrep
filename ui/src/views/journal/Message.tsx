@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import de from "dayjs/locale/de";
 import LocalizedFormat from "dayjs/plugin/localizedFormat";
 import relativeTime from "dayjs/plugin/relativeTime";
-
+import { useBooleanFlagValue } from "@openfeature/react-sdk";
 import { faArrowsToEye, faEdit, faPrint, faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { memo } from "react";
@@ -47,6 +47,7 @@ function Message({
 }: MessageProps) {
   const { t } = useTranslation();
   const { incidentId, journalId } = useParams();
+  const showTasks = useBooleanFlagValue("show-tasks", false);
 
   const colorClassNames = classNames({
     "is-danger":
@@ -169,14 +170,18 @@ function Message({
               ) : (
                 <></>
               )}
-              <li>
-                <a>
-                  <span className="icon is-small">
-                    <FontAwesomeIcon icon={faSquareCheck} />
-                  </span>
-                  <span>{t("createNewTask")}</span>
-                </a>
-              </li>
+              {showTasks ? (
+                <li>
+                  <a>
+                    <span className="icon is-small">
+                      <FontAwesomeIcon icon={faSquareCheck} />
+                    </span>
+                    <span>{t("createNewTask")}</span>
+                  </a>
+                </li>
+              ) : (
+                <></>
+              )}
             </ul>
           </div>
         ) : (
