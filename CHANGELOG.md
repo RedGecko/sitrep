@@ -31,11 +31,6 @@
 
 - *(dev)* Remove idea files - ([a46ab03](https://github.com/f-eld-ch/sitrep/commit/a46ab037aeb5199bec3ff065014f008b7d3237b4))
 
-## New Contributors ❤️
-
-* @dependabot[bot] made their first contribution in [#546](https://github.com/f-eld-ch/sitrep/pull/546)
-* @nimdanitro made their first contribution
-* @lukastresch made their first contribution in [#500](https://github.com/f-eld-ch/sitrep/pull/500)
 
 ## [24.11.0](https://github.com/f-eld-ch/sitrep/compare/v24.10.2..v24.11.0) - 2024-11-07
 
