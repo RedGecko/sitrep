@@ -1,3 +1,10 @@
+## [unreleased]
+
+### 🐛 Bug Fixes
+
+- *(messages)* Properly hide create tasks from Message component - ([4e769db](https://github.com/f-eld-ch/sitrep/commit/4e769dbedcaba4c12071b753b37f0ee40c520c8c))
+
+
 ## [24.12.0](https://github.com/f-eld-ch/sitrep/compare/v24.11.0..v24.12.0) - 2024-12-04
 
 ### 🐛 Bug Fixes
