@@ -1,5 +1,9 @@
 ## [unreleased]
 
+### ⛰️  Features
+
+- *(map)* Add searchbox ([#551](https://github.com/f-eld-ch/sitrep/issues/551)) - ([e5012b8](https://github.com/f-eld-ch/sitrep/commit/e5012b8453e1c9f630d857c21dfea49ed26288ce))
+
 ### 🐛 Bug Fixes
 
 - *(messages)* Properly hide create tasks from Message component - ([4e769db](https://github.com/f-eld-ch/sitrep/commit/4e769dbedcaba4c12071b753b37f0ee40c520c8c))
