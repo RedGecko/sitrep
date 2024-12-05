@@ -1,5 +1,12 @@
 ## [unreleased]
 
+### ⚙️  Other
+
+- *(deps)* Bump @openfeature/react-sdk from 0.4.8 to 0.4.9 in /ui ([#549](https://github.com/f-eld-ch/sitrep/issues/549)) - ([3669f0a](https://github.com/f-eld-ch/sitrep/commit/3669f0a97519d59d69c6d241419a70cb62c010cf))
+
+
+## [24.12.1](https://github.com/f-eld-ch/sitrep/compare/v24.12.0..v24.12.1) - 2024-12-04
+
 ### ⛰️  Features
 
 - *(map)* Add searchbox ([#551](https://github.com/f-eld-ch/sitrep/issues/551)) - ([e5012b8](https://github.com/f-eld-ch/sitrep/commit/e5012b8453e1c9f630d857c21dfea49ed26288ce))
