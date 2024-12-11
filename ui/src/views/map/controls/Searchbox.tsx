@@ -76,6 +76,10 @@ function SearchControl() {
           features: data.features,
         };
         setSearchResults(searchResult.features);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        setSearchResults([]);
       });
   };
   const debouncedSearch = debounce(search, 1000);
@@ -97,9 +101,6 @@ function SearchControl() {
         <div className="dropdown-trigger">
           <div className="field has-addons">
             <div className="control is-expanded has-icons-left">
-              <span className="icon is-left">
-                <FontAwesomeIcon icon={faSearch} />
-              </span>
               <input
                 className="input"
                 type="search"
@@ -108,6 +109,9 @@ function SearchControl() {
                 onChange={onChange}
                 onKeyDown={(e) => e.key === "Enter" && search(input)}
               />
+              <span className="icon is-left">
+                <FontAwesomeIcon icon={faSearch} />
+              </span>
             </div>
           </div>
           <div className="dropdown-menu" id="dropdown-menu">
