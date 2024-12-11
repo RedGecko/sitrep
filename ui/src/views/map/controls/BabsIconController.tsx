@@ -15,9 +15,9 @@ import { Feature, GeoJsonProperties, Geometry } from "geojson";
 import { first, isEmpty, isUndefined, omitBy } from "lodash";
 import { memo, useCallback, useContext, useEffect, useState } from "react";
 import { useMap } from "react-map-gl/maplibre";
-import "./BabsIconController.scss";
-import { LayerToFeatureCollection } from "../utils";
 import { LayerContext } from "../LayerContext";
+import { LayerToFeatureCollection } from "../utils";
+import "./BabsIconController.scss";
 
 const iconControllerFlexboxStyleRow = {
   display: "flex",
@@ -44,7 +44,7 @@ const iconControllerStyle = {
   marginTop: "160px",
 };
 
-function IconController(props: BabsIconControllerProps) {
+const IconController = memo((props: BabsIconControllerProps) => {
   const { selectedFeature, onUpdate } = props;
   const { current: map } = useMap();
   const [rotationLock, setRotationLock] = useState<boolean>(!isUndefined(selectedFeature?.properties?.iconRotation));
@@ -128,7 +128,7 @@ function IconController(props: BabsIconControllerProps) {
       </div>
     </div>
   );
-}
+});
 
 function IconGroupMenu(props: GroupMenuProps) {
   const { iconGroup, onUpdate, feature, name } = props;
@@ -173,7 +173,7 @@ function IconGroupMenu(props: GroupMenuProps) {
   );
 }
 
-function LineController(props: BabsIconControllerProps) {
+const LineController = memo((props: BabsIconControllerProps) => {
   const { selectedFeature, onUpdate } = props;
 
   const onClickIcon = useCallback(
@@ -254,9 +254,9 @@ function LineController(props: BabsIconControllerProps) {
       </div>
     </div>
   );
-}
+});
 
-function ZoneController(props: BabsIconControllerProps) {
+const ZoneController = memo((props: BabsIconControllerProps) => {
   const { selectedFeature, onUpdate } = props;
 
   const onClickIcon = useCallback(
@@ -292,7 +292,7 @@ function ZoneController(props: BabsIconControllerProps) {
       </div>
     </div>
   );
-}
+});
 
 type SelectableTypes = Record<string, TypesType>;
 
@@ -421,10 +421,6 @@ const LineTypes: SelectableTypes = {
   },
 };
 
-const memoIconController = memo(IconController);
-const memoLineController = memo(LineController);
-const memoZoneController = memo(ZoneController);
-
 interface GroupMenuProps {
   name: string;
   iconGroup: BabsIconType;
@@ -437,7 +433,7 @@ interface BabsIconControllerProps {
   onUpdate: (e: { features: Feature<Geometry, GeoJsonProperties>[]; action: string }) => void;
 }
 
-function BabsIconController() {
+const BabsIconController = () => {
   const { state } = useContext(LayerContext);
   const layer = first(state.layers.filter((l) => l.id === state.activeLayer));
   const { current: map } = useMap();
@@ -462,9 +458,9 @@ function BabsIconController() {
       <ZoneController selectedFeature={selectedFeature} onUpdate={onUpdate} />
     </>
   );
-}
+};
 
-function FeatureDetailControlPanel(props: BabsIconControllerProps) {
+const FeatureDetailControlPanel = memo((props: BabsIconControllerProps) => {
   const { selectedFeature, onUpdate } = props;
   const [enteredText, setEnteredText] = useState<string>(selectedFeature?.properties?.name);
   const [active, setActive] = useState<boolean>(false);
@@ -550,13 +546,8 @@ function FeatureDetailControlPanel(props: BabsIconControllerProps) {
       </button>
     </div>
   );
-}
+});
 
 export default BabsIconController;
 
-export {
-  BabsIconController,
-  memoIconController as IconController,
-  memoLineController as LineController,
-  memoZoneController as ZoneController,
-};
+export { BabsIconController, FeatureDetailControlPanel, IconController, LineController, ZoneController };
