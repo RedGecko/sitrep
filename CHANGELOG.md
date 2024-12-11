@@ -1,5 +1,9 @@
 ## [unreleased]
 
+### 🐛 Bug Fixes
+
+- *(map)* Fix searchbar icon - ([b7e1f98](https://github.com/f-eld-ch/sitrep/commit/b7e1f98dfaffae53f064d4630d19bd964c4d563d))
+
 ### ⚙️  Other
 
 - *(deps)* Bump react-i18next from 15.1.3 to 15.1.4 in /ui ([#562](https://github.com/f-eld-ch/sitrep/issues/562)) - ([7d440c6](https://github.com/f-eld-ch/sitrep/commit/7d440c65e90c54c21926b5bc0c2086fdd66fb8a7))
