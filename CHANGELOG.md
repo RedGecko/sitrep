@@ -6,6 +6,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump i18next from 24.0.5 to 24.1.0 in /ui ([#568](https://github.com/f-eld-ch/sitrep/issues/568)) - ([70613f6](https://github.com/f-eld-ch/sitrep/commit/70613f654fb6dcdbfe629893c74d02fd8030a0d3))
 - *(deps)* Bump nanoid ([#566](https://github.com/f-eld-ch/sitrep/issues/566)) - ([b72b6fb](https://github.com/f-eld-ch/sitrep/commit/b72b6fbce3483c3956885bfb78de006bab9682d6))
 - *(deps)* Bump react-i18next from 15.1.3 to 15.1.4 in /ui ([#562](https://github.com/f-eld-ch/sitrep/issues/562)) - ([7d440c6](https://github.com/f-eld-ch/sitrep/commit/7d440c65e90c54c21926b5bc0c2086fdd66fb8a7))
 - *(deps)* Bump @watergis/maplibre-gl-export in /ui ([#564](https://github.com/f-eld-ch/sitrep/issues/564)) - ([fef0797](https://github.com/f-eld-ch/sitrep/commit/fef07978cc2123562f89ac4cce38ea941259582d))
