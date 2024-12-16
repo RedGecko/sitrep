@@ -6,6 +6,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump react-i18next from 15.1.4 to 15.2.0 in /ui ([#570](https://github.com/f-eld-ch/sitrep/issues/570)) - ([dd2e0ad](https://github.com/f-eld-ch/sitrep/commit/dd2e0ad169b1edfd462d55f41ec841ac3ca71b09))
 - *(deps)* Bump i18next from 24.0.5 to 24.1.0 in /ui ([#568](https://github.com/f-eld-ch/sitrep/issues/568)) - ([70613f6](https://github.com/f-eld-ch/sitrep/commit/70613f654fb6dcdbfe629893c74d02fd8030a0d3))
 - *(deps)* Bump nanoid ([#566](https://github.com/f-eld-ch/sitrep/issues/566)) - ([b72b6fb](https://github.com/f-eld-ch/sitrep/commit/b72b6fbce3483c3956885bfb78de006bab9682d6))
 - *(deps)* Bump react-i18next from 15.1.3 to 15.1.4 in /ui ([#562](https://github.com/f-eld-ch/sitrep/issues/562)) - ([7d440c6](https://github.com/f-eld-ch/sitrep/commit/7d440c65e90c54c21926b5bc0c2086fdd66fb8a7))
