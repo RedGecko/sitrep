@@ -1,8 +1,6 @@
 import classNames from "classnames";
 import dayjs from "dayjs";
-import de from "dayjs/locale/de";
-import LocalizedFormat from "dayjs/plugin/localizedFormat";
-import relativeTime from "dayjs/plugin/relativeTime";
+
 import { useBooleanFlagValue } from "@openfeature/react-sdk";
 import { faArrowsToEye, faEdit, faPrint, faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,10 +25,6 @@ export interface MessageProps {
   setTriageMessage?: (message: MessageType | undefined) => void;
 }
 
-dayjs.locale(de);
-dayjs.extend(LocalizedFormat);
-dayjs.extend(relativeTime);
-
 function Message({
   id,
   sender,
@@ -45,7 +39,7 @@ function Message({
   setTriageMessage,
   origMessage,
 }: MessageProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { incidentId, journalId } = useParams();
   const showTasks = useBooleanFlagValue("show-tasks", false);
 
@@ -102,7 +96,7 @@ function Message({
               <div className="level-item has-text-centered is-flex-shrink-1">
                 <div className="mb-0">
                   <p className="heading is-size-7">{t("message.time")}</p>
-                  <p className="subtitle is-size-7">{dayjs(timeDate).format("LLL")}</p>
+                  <p className="subtitle is-size-7">{dayjs(timeDate).locale(i18n.language).format("LLL")}</p>
                 </div>
               </div>
               <div className="level-item has-text-centered is-flex-shrink-1">

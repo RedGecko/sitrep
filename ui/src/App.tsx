@@ -25,12 +25,19 @@ import MessageSheet from "views/journal/MessageSheet";
 import { Layout, LayoutMarginLess } from "views/Layout";
 import { default as client } from "client";
 import { Provider as FeatureFlagProvider } from "FeatureFlags";
-
+import "./i18n";
+import dayjs from "dayjs";
+import LocalizedFormat from "dayjs/plugin/localizedFormat";
+import de from "dayjs/locale/de";
+import fr from "dayjs/locale/fr";
+import it from "dayjs/locale/it";
+import en from "dayjs/locale/en";
 const Map = lazy(() => import("views/map"));
 
 function App() {
   const [userState, setUserState] = useState<UserState>({ isLoggedin: false, email: "", username: "" });
   const { i18n } = useTranslation();
+  dayjs.extend(LocalizedFormat);
 
   const setUserStateFromUserinfo = () => {
     fetch("/oauth2/userinfo", { credentials: "include" })
@@ -55,6 +62,22 @@ function App() {
   useEffect(() => {
     setUserStateFromUserinfo();
     i18n.changeLanguage();
+    const locale = (lang: string) => {
+      switch (lang) {
+        case "de":
+          return de;
+        case "en":
+          return en;
+        case "fr":
+          return fr;
+        case "it":
+          return it;
+        default:
+          return en;
+      }
+    };
+    const lang = locale(i18n.language);
+    dayjs.locale(lang.toString());
 
     const interval = setInterval(() => {
       setUserStateFromUserinfo();
