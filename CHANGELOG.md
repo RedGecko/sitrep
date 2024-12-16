@@ -6,6 +6,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump @apollo/client from 3.11.10 to 3.12.3 in /ui ([#569](https://github.com/f-eld-ch/sitrep/issues/569)) - ([50564e5](https://github.com/f-eld-ch/sitrep/commit/50564e52fe5043d2c218257aede67115d419ff0b))
 - *(deps)* Bump react-i18next from 15.1.4 to 15.2.0 in /ui ([#570](https://github.com/f-eld-ch/sitrep/issues/570)) - ([dd2e0ad](https://github.com/f-eld-ch/sitrep/commit/dd2e0ad169b1edfd462d55f41ec841ac3ca71b09))
 - *(deps)* Bump i18next from 24.0.5 to 24.1.0 in /ui ([#568](https://github.com/f-eld-ch/sitrep/issues/568)) - ([70613f6](https://github.com/f-eld-ch/sitrep/commit/70613f654fb6dcdbfe629893c74d02fd8030a0d3))
 - *(deps)* Bump nanoid ([#566](https://github.com/f-eld-ch/sitrep/issues/566)) - ([b72b6fb](https://github.com/f-eld-ch/sitrep/commit/b72b6fbce3483c3956885bfb78de006bab9682d6))
