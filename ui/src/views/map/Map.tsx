@@ -56,11 +56,12 @@ function MapView() {
     "is-align-items-stretch": true,
     "is-align-self-strech": true,
     "mt-3": true,
+    "theme-light": true,
   });
 
   return (
     <>
-      <div className={mapClass}>
+      <div className={mapClass} data-theme="light">
         <Map
           mapLib={maplibregl}
           onLoad={(e) => console.log(e)}

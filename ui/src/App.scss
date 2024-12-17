@@ -1,4 +1,6 @@
-$orange: #f5743d;
+$orange: hsl(18, 89%, 62%);
+$orange-lighter: hsl(18, 89%, 42%);
+
 $yellow: #ecb341;
 $red: #d60000;
 $blue: #0030cc;
@@ -20,7 +22,7 @@ $grey-lightest: hsl(221, 14%, 93%);
   $warning: $yellow,
   $danger: $red,
   $info: $blue,
-  $link: $orange,
+  $link: $orange-lighter,
   $weight-light: 100,
   $weight-normal: 300,
   $weight-medium: 500,
