@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Navigate, Route, HashRouter as Router, Routes } from "react-router-dom";
 
 import "./App.scss";
@@ -16,11 +16,10 @@ import { List as RequestList } from "views/measures/requests";
 import { List as TaskList } from "views/measures/tasks";
 import { List as ResourcesList } from "views/resource";
 
+import { useTranslation } from "react-i18next";
 import { ApolloProvider } from "@apollo/client";
 import { Spinner } from "components";
-import { useTranslation } from "react-i18next";
-import { UserState } from "types";
-import { UserContext } from "utils";
+import { UserProvider } from "utils";
 import MessageSheet from "views/journal/MessageSheet";
 import { Layout, LayoutMarginLess } from "views/Layout";
 import { default as client } from "client";
@@ -35,32 +34,10 @@ import en from "dayjs/locale/en";
 const Map = lazy(() => import("views/map"));
 
 function App() {
-  const [userState, setUserState] = useState<UserState>({ isLoggedin: false, email: "", username: "" });
   const { i18n } = useTranslation();
   dayjs.extend(LocalizedFormat);
 
-  const setUserStateFromUserinfo = () => {
-    fetch("/oauth2/userinfo", { credentials: "include" })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("unauthenticated");
-        }
-        return response.json();
-      })
-      .then((userInfo) => {
-        setUserState({
-          isLoggedin: true,
-          email: userInfo.email,
-          username: userInfo.user || userInfo.preferredUsername,
-        });
-      })
-      .catch(() => {
-        setUserState({ isLoggedin: false, email: "", username: "" });
-      });
-  };
-
   useEffect(() => {
-    setUserStateFromUserinfo();
     i18n.changeLanguage();
     const locale = (lang: string) => {
       switch (lang) {
@@ -78,16 +55,10 @@ function App() {
     };
     const lang = locale(i18n.language);
     dayjs.locale(lang.toString());
-
-    const interval = setInterval(() => {
-      setUserStateFromUserinfo();
-    }, 10000);
-
-    return () => clearInterval(interval);
-  }, [i18n]);
+  }, [i18n.language]);
 
   return (
-    <UserContext.Provider value={userState}>
+    <UserProvider>
       <ApolloProvider client={client}>
         <FeatureFlagProvider>
           <Router>
@@ -212,7 +183,7 @@ function App() {
           </Router>
         </FeatureFlagProvider>
       </ApolloProvider>
-    </UserContext.Provider>
+    </UserProvider>
   );
 }
 
