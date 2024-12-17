@@ -13,7 +13,7 @@ export interface LayoutProps {
 export const Layout = (props: LayoutProps) => {
   const [searchParams] = useSearchParams();
   const { i18n } = useTranslation();
-  const userState = useContext(UserContext);
+  const { state: userState } = useContext(UserContext);
 
   const lang = searchParams.get("lang");
   useEffect(() => {
@@ -40,7 +40,7 @@ export const Layout = (props: LayoutProps) => {
 export const LayoutMarginLess = (props: LayoutProps) => {
   const [searchParams] = useSearchParams();
   const { i18n } = useTranslation();
-  const userState = useContext(UserContext);
+  const { state: userState } = useContext(UserContext);
 
   const lang = searchParams.get("lang");
   useEffect(() => {
