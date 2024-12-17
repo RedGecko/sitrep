@@ -10,6 +10,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump i18next from 24.1.0 to 24.1.2 in /ui ([#581](https://github.com/f-eld-ch/sitrep/issues/581)) - ([8147e96](https://github.com/f-eld-ch/sitrep/commit/8147e96a25bbe5dab84f3a1e75d978c360a6d2c4))
 - *(deps)* Bump the fontawesome group in /ui with 4 updates ([#580](https://github.com/f-eld-ch/sitrep/issues/580)) - ([c4e7f76](https://github.com/f-eld-ch/sitrep/commit/c4e7f7662269bec38076f4adee20790d0a176a75))
 - *(deps)* Bump graphql from 16.9.0 to 16.10.0 in /ui ([#574](https://github.com/f-eld-ch/sitrep/issues/574)) - ([a9b6fce](https://github.com/f-eld-ch/sitrep/commit/a9b6fce868736db4133956a8a31406abe603260c))
 - *(deps)* Bump @apollo/client from 3.11.10 to 3.12.3 in /ui ([#569](https://github.com/f-eld-ch/sitrep/issues/569)) - ([50564e5](https://github.com/f-eld-ch/sitrep/commit/50564e52fe5043d2c218257aede67115d419ff0b))
