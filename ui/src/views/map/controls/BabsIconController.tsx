@@ -508,7 +508,7 @@ const FeatureDetailControlPanel = memo((props: BabsIconControllerProps) => {
 
   if (!active) {
     return (
-      <div className="maplibregl-ctrl-top-right" style={{ marginRight: "45px" }}>
+      <div className="maplibregl-ctrl-top-right has-text-black" style={{ marginRight: "45px" }}>
         <div className="maplibregl-ctrl maplibregl-ctrl-group">
           <button type="button" className={btnClass} onClick={() => setActive(!active)}>
             <FontAwesomeIcon icon={faHeading} size="lg" />

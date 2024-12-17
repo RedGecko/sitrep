@@ -33,7 +33,7 @@ function LayerPanel() {
   );
 
   return (
-    <div className="maplibregl-ctrl maplibregl-ctrl-group">
+    <div className="maplibregl-ctrl maplibregl-ctrl-group has-text-black">
       <button type="button" className={btnClass} onClick={() => setActive(!active)}>
         <FontAwesomeIcon icon={faLayerGroup} size="lg" />
       </button>
