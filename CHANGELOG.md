@@ -1,5 +1,9 @@
 ## [unreleased]
 
+### ⛰️  Features
+
+- *(ui)* Remove beta label from situation map nav item - ([e5fc2f8](https://github.com/f-eld-ch/sitrep/commit/e5fc2f8282eafa5655b5dbb3354614ed2c4b5eb2))
+
 ### 🐛 Bug Fixes
 
 - *(i18n)* Format times and dates according to locale ([#572](https://github.com/f-eld-ch/sitrep/issues/572)) - ([204bbae](https://github.com/f-eld-ch/sitrep/commit/204bbaea4b402306a5e5f52c9a30e9509adbbb9a))
