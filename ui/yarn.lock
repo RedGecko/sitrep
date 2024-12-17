@@ -8299,10 +8299,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^16.9.0":
-  version: 16.9.0
-  resolution: "graphql@npm:16.9.0"
-  checksum: 10/5833f82bb6c31bec120bbf9cd400eda873e1bb7ef5c17974fa262cd82dc68728fda5d4cb859dc8aaa4c4fe4f6fe1103a9c47efc01a12c02ae5cb581d8e4029e2
+"graphql@npm:^16.10.0":
+  version: 16.10.0
+  resolution: "graphql@npm:16.10.0"
+  checksum: 10/d42cf81ddcf3a61dfb213217576bf33c326f15b02c4cee369b373dc74100cbdcdc4479b3b797e79b654dabd8fddf50ef65ff75420e9ce5596c02e21f24c9126a
   languageName: node
   linkType: hard
 
@@ -13158,7 +13158,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^5.2.1"
     eslint-plugin-react: "npm:^7.37.2"
     globals: "npm:^15.13.0"
-    graphql: "npm:^16.9.0"
+    graphql: "npm:^16.10.0"
     hat: "npm:^0.0.3"
     husky: "npm:^9.1.7"
     i18next: "npm:^24.1.0"
