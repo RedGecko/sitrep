@@ -393,7 +393,6 @@ const MapNavBar: FunctionComponent = () => {
             <FontAwesomeIcon icon={faMapLocationDot} />
           </span>
           <span>{t("map")}</span>
-          <span className="has-text-warning	ml-1">(beta)</span>
         </span>
       </NavLink>
     </div>
