@@ -2,6 +2,7 @@
 
 ### 🐛 Bug Fixes
 
+- *(map)* Do not reload while editing text of feature ([#579](https://github.com/f-eld-ch/sitrep/issues/579)) - ([78f7f7f](https://github.com/f-eld-ch/sitrep/commit/78f7f7f0b4856ba64fdbd4a417fe0f82388e9748))
 - *(map)* Fix searchbar icon - ([b7e1f98](https://github.com/f-eld-ch/sitrep/commit/b7e1f98dfaffae53f064d4630d19bd964c4d563d))
 
 ### ⚙️  Other
