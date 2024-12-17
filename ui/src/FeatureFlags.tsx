@@ -23,7 +23,7 @@ const localFlagConfig = {
 
 const Provider = (props: PropsWithChildren) => {
   const { children } = props;
-  const userState = useContext(UserContext);
+  const { state: userState } = useContext(UserContext);
 
   useEffect(() => {
     const fliptProvider = new FliptWebProvider("sitrep-ui", { url: "https://flipt.sitrep.ch" });
@@ -38,11 +38,6 @@ const Provider = (props: PropsWithChildren) => {
       email: userState.email,
     };
     OpenFeature.setContext(context);
-
-    return () => {
-      console.log("closing openfeature provider");
-      OpenFeature.close();
-    };
   }, [userState]);
 
   return <OpenFeatureProvider>{children}</OpenFeatureProvider>;

@@ -521,13 +521,12 @@ const FeatureDetailControlPanel = memo((props: BabsIconControllerProps) => {
   return (
     <div className="maplibregl-ctrl maplibregl-ctrl-top-right control-panel">
       <h5 className="title is-5">Name</h5>
-      <div className="control has-icons-left has-icons-right">
+      <div className="control has-icons-left has-icons-right mb-1">
         <input
           className="input is-small"
-          type="email"
-          placeholder="Signaturtext"
+          type="text"
+          placeholder="Name"
           onChange={(e) => {
-            e.preventDefault();
             setEnteredText(e.target.value);
           }}
           value={enteredText}
