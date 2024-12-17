@@ -12,6 +12,10 @@
 - *(ui)* Reduce footer size to improve smaller screen experience - ([e9518a7](https://github.com/f-eld-ch/sitrep/commit/e9518a7349ef500411c2c89e30c37a1f715e5222))
 - Minor dark-theme improvements - ([d681b9a](https://github.com/f-eld-ch/sitrep/commit/d681b9a92252d836163b63cb59803358f20c69cc))
 
+### 📚 Documentation
+
+- *(security)* Add security.md documentation - ([426ad11](https://github.com/f-eld-ch/sitrep/commit/426ad116b9ca4920ee8f8b44ba8c72468dd88cdc))
+
 ### ⚙️  Other
 
 - *(deps)* Bump i18next from 24.1.0 to 24.1.2 in /ui ([#581](https://github.com/f-eld-ch/sitrep/issues/581)) - ([8147e96](https://github.com/f-eld-ch/sitrep/commit/8147e96a25bbe5dab84f3a1e75d978c360a6d2c4))
