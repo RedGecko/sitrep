@@ -1,6 +1,8 @@
 import { useMutation, useQuery } from "@apollo/client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import LocalizedFormat from "dayjs/plugin/localizedFormat";
+import relativeTime from "dayjs/plugin/relativeTime";
 
 import {
   faChartSimple,
@@ -15,21 +17,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import { Spinner } from "components";
 import dayjs from "dayjs";
-import de from "dayjs/locale/de";
-import LocalizedFormat from "dayjs/plugin/localizedFormat";
 import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 import { Journal, JournalListData, JournalListVars } from "types";
 import { CloseJournal, GetJournals } from "./graphql";
 
-dayjs.locale(de);
-dayjs.extend(LocalizedFormat);
-
 function Overview() {
   const { incidentId } = useParams();
   const [filterClosed, setFilterClosed] = useState(true);
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    dayjs.extend(LocalizedFormat);
+    dayjs.extend(relativeTime);
+  }, [i18n.language]);
 
   const { loading, error, data } = useQuery<JournalListData, JournalListVars>(GetJournals, {
     variables: { incidentId: incidentId || "" },

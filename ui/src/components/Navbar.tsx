@@ -186,7 +186,7 @@ function VersionNavBar() {
 }
 
 function UserNavBar() {
-  const userState = useContext(UserContext);
+  const { state: userState } = useContext(UserContext);
   const { t } = useTranslation();
 
   if (!userState.isLoggedin) return <></>;

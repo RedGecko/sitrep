@@ -3,7 +3,6 @@ import { faSquare, faSquareCheck } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Spinner } from "components";
 import dayjs from "dayjs";
-import de from "dayjs/locale/de";
 import LocalizedFormat from "dayjs/plugin/localizedFormat";
 import relativeTime from "dayjs/plugin/relativeTime";
 
@@ -13,13 +12,12 @@ import { useParams } from "react-router-dom";
 import { Medium, PriorityStatus, TriageMessageData, TriageMessageVars, TriageStatus } from "types";
 import { GetMessageForTriage } from "./graphql";
 
-dayjs.locale(de);
 dayjs.extend(LocalizedFormat);
 dayjs.extend(relativeTime);
 
 function MessageSheet() {
   const { messageId } = useParams();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const { loading, error, data } = useQuery<TriageMessageData, TriageMessageVars>(GetMessageForTriage, {
     variables: { messageId: messageId },
@@ -60,9 +58,9 @@ function MessageSheet() {
               </tr>
               <tr>
                 <th>{t("message.time")}</th>
-                <td>{dayjs(data?.messagesByPk.createdAt).format("LLL")}</td>
+                <td>{dayjs(data?.messagesByPk.createdAt).locale(i18n.language).format("LLL")}</td>
                 <th>{t("message.createdAt")}</th>
-                <td>{dayjs(data?.messagesByPk.createdAt).format("LLL")}</td>
+                <td>{dayjs(data?.messagesByPk.createdAt).locale(i18n.language).format("LLL")}</td>
               </tr>
               <tr>
                 <th>{t("message.id")}</th>

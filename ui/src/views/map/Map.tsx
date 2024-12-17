@@ -97,8 +97,7 @@ function Layers() {
   const { state } = useContext(LayerContext);
 
   return (
-    <LayersProvider>
-      <LayerFetcher />
+    <>
       <div className="maplibregl-ctrl-bottom-right">
         <LayerControl />
         <StyleController />
@@ -106,10 +105,11 @@ function Layers() {
 
       {/* Active Layer */}
       <ActiveLayer />
+      <BabsIconController />
 
       {/* Inactive Layers */}
       <InactiveLayers layers={state.layers.filter((l) => l.id !== state.activeLayer) || []} />
-    </LayersProvider>
+    </>
   );
 }
 
@@ -120,7 +120,7 @@ function LayerFetcher() {
 
   const { data, loading } = useQuery<GetLayersData, GetLayersVars>(GetLayers, {
     variables: { incidentId: incidentId || "" },
-    pollInterval: 3000,
+    pollInterval: 2000,
     fetchPolicy: "cache-and-network",
   });
 
@@ -170,7 +170,6 @@ function ActiveLayer() {
         featureCollection={featureCollection}
         selectedFeature={state.selectedFeature}
       />
-      <BabsIconController />
     </>
   );
 }
@@ -397,7 +396,10 @@ function InactiveLayer(props: { featureCollection: FeatureCollection; id: string
 function MapWithProvder() {
   return (
     <MapProvider>
-      <MapView />
+      <LayersProvider>
+        <MapView />
+        <LayerFetcher />
+      </LayersProvider>
     </MapProvider>
   );
 }

@@ -2,10 +2,13 @@
 
 ### 🐛 Bug Fixes
 
+- *(i18n)* Format times and dates according to locale ([#572](https://github.com/f-eld-ch/sitrep/issues/572)) - ([204bbae](https://github.com/f-eld-ch/sitrep/commit/204bbaea4b402306a5e5f52c9a30e9509adbbb9a))
+- *(map)* Do not reload while editing text of feature ([#579](https://github.com/f-eld-ch/sitrep/issues/579)) - ([78f7f7f](https://github.com/f-eld-ch/sitrep/commit/78f7f7f0b4856ba64fdbd4a417fe0f82388e9748))
 - *(map)* Fix searchbar icon - ([b7e1f98](https://github.com/f-eld-ch/sitrep/commit/b7e1f98dfaffae53f064d4630d19bd964c4d563d))
 
 ### ⚙️  Other
 
+- *(deps)* Bump graphql from 16.9.0 to 16.10.0 in /ui ([#574](https://github.com/f-eld-ch/sitrep/issues/574)) - ([a9b6fce](https://github.com/f-eld-ch/sitrep/commit/a9b6fce868736db4133956a8a31406abe603260c))
 - *(deps)* Bump @apollo/client from 3.11.10 to 3.12.3 in /ui ([#569](https://github.com/f-eld-ch/sitrep/issues/569)) - ([50564e5](https://github.com/f-eld-ch/sitrep/commit/50564e52fe5043d2c218257aede67115d419ff0b))
 - *(deps)* Bump react-i18next from 15.1.4 to 15.2.0 in /ui ([#570](https://github.com/f-eld-ch/sitrep/issues/570)) - ([dd2e0ad](https://github.com/f-eld-ch/sitrep/commit/dd2e0ad169b1edfd462d55f41ec841ac3ca71b09))
 - *(deps)* Bump i18next from 24.0.5 to 24.1.0 in /ui ([#568](https://github.com/f-eld-ch/sitrep/issues/568)) - ([70613f6](https://github.com/f-eld-ch/sitrep/commit/70613f654fb6dcdbfe629893c74d02fd8030a0d3))
