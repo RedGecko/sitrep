@@ -18,6 +18,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump @openfeature/web-sdk from 1.3.2 to 1.4.0 in /ui ([#585](https://github.com/f-eld-ch/sitrep/issues/585)) - ([0b4d782](https://github.com/f-eld-ch/sitrep/commit/0b4d78298f52f957915cfea668ca8b764a598eb8))
 - *(deps)* Bump @openfeature/core from 1.5.0 to 1.6.0 in /ui ([#584](https://github.com/f-eld-ch/sitrep/issues/584)) - ([40213fb](https://github.com/f-eld-ch/sitrep/commit/40213fb5af2254a078174a580861d91ae5348e21))
 - *(deps)* Bump i18next from 24.1.0 to 24.1.2 in /ui ([#581](https://github.com/f-eld-ch/sitrep/issues/581)) - ([8147e96](https://github.com/f-eld-ch/sitrep/commit/8147e96a25bbe5dab84f3a1e75d978c360a6d2c4))
 - *(deps)* Bump the fontawesome group in /ui with 4 updates ([#580](https://github.com/f-eld-ch/sitrep/issues/580)) - ([c4e7f76](https://github.com/f-eld-ch/sitrep/commit/c4e7f7662269bec38076f4adee20790d0a176a75))
