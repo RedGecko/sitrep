@@ -12114,9 +12114,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-map-gl@npm:~7.1.7":
-  version: 7.1.7
-  resolution: "react-map-gl@npm:7.1.7"
+"react-map-gl@npm:~7.1.8":
+  version: 7.1.8
+  resolution: "react-map-gl@npm:7.1.8"
   dependencies:
     "@maplibre/maplibre-gl-style-spec": "npm:^19.2.1"
     "@types/mapbox-gl": "npm:>=1.0.0"
@@ -12130,7 +12130,7 @@ __metadata:
       optional: true
     maplibre-gl:
       optional: true
-  checksum: 10/a65493dd259dedadc31307979ccda6003c607ebc55e800d43453f287fa943b4ae13c7beac1327f2913fb327461d7690eeaccc2a43353f52887f29673fe50f005
+  checksum: 10/bfeb1c5cb5a59186e744e7d517d185cd81934399b21549038980c1ae64f544e006e6a6e252b14292c48d97272966bad5496d295d50f0f5d4e7870b22cfd4d1bc
   languageName: node
   linkType: hard
 
@@ -13176,7 +13176,7 @@ __metadata:
     react-dom: "npm:^18.3.1"
     react-html-parser: "npm:^2.0.2"
     react-i18next: "npm:^15.2.0"
-    react-map-gl: "npm:~7.1.7"
+    react-map-gl: "npm:~7.1.8"
     react-markdown: "npm:^9.0.1"
     react-router-dom: "npm:^6.28.0"
     rollup-plugin-visualizer: "npm:^5.12.0"
