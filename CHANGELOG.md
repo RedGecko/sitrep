@@ -18,6 +18,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump i18next from 24.1.2 to 24.2.0 in /ui ([#589](https://github.com/f-eld-ch/sitrep/issues/589)) - ([d75f887](https://github.com/f-eld-ch/sitrep/commit/d75f887ebac54fc9ec0428054492123e33551e80))
 - *(deps)* Bump react-map-gl from 7.1.7 to 7.1.8 in /ui ([#590](https://github.com/f-eld-ch/sitrep/issues/590)) - ([68a909f](https://github.com/f-eld-ch/sitrep/commit/68a909f66a34f1e6a242c2a65834a4ca138a8182))
 - *(deps)* Bump @apollo/client from 3.12.3 to 3.12.4 in /ui ([#587](https://github.com/f-eld-ch/sitrep/issues/587)) - ([cb4c4a4](https://github.com/f-eld-ch/sitrep/commit/cb4c4a4b60807a7d6466e0750d611dd289e69d1e))
 - *(deps)* Bump @openfeature/react-sdk from 0.4.9 to 0.4.10 in /ui ([#583](https://github.com/f-eld-ch/sitrep/issues/583)) - ([2644781](https://github.com/f-eld-ch/sitrep/commit/2644781491c9686396d6f27d6c61abd1860cb353))
