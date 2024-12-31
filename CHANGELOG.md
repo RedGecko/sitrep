@@ -18,6 +18,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump bulma from 1.0.2 to 1.0.3 in /ui ([#597](https://github.com/f-eld-ch/sitrep/issues/597)) - ([110f162](https://github.com/f-eld-ch/sitrep/commit/110f16206882943317eba1f3a449aa8ec63c6d58))
 - *(deps)* Bump i18next from 24.1.2 to 24.2.0 in /ui ([#589](https://github.com/f-eld-ch/sitrep/issues/589)) - ([d75f887](https://github.com/f-eld-ch/sitrep/commit/d75f887ebac54fc9ec0428054492123e33551e80))
 - *(deps)* Bump react-map-gl from 7.1.7 to 7.1.8 in /ui ([#590](https://github.com/f-eld-ch/sitrep/issues/590)) - ([68a909f](https://github.com/f-eld-ch/sitrep/commit/68a909f66a34f1e6a242c2a65834a4ca138a8182))
 - *(deps)* Bump @apollo/client from 3.12.3 to 3.12.4 in /ui ([#587](https://github.com/f-eld-ch/sitrep/issues/587)) - ([cb4c4a4](https://github.com/f-eld-ch/sitrep/commit/cb4c4a4b60807a7d6466e0750d611dd289e69d1e))
