@@ -16,7 +16,7 @@
     "@openfeature/flipt-web-provider": "^0.1.1",
     "@openfeature/react-sdk": "^0.4.10",
     "@openfeature/web-sdk": "^1.4.0",
-    "@turf/bearing": "^7.1.0",
+    "@turf/bearing": "^7.2.0",
     "@turf/center": "^7.2.0",
     "@turf/helpers": "^7.1.0",
     "@watergis/maplibre-gl-export": "~3.8.5",

@@ -4216,15 +4216,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turf/bearing@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@turf/bearing@npm:7.1.0"
+"@turf/bearing@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@turf/bearing@npm:7.2.0"
   dependencies:
-    "@turf/helpers": "npm:^7.1.0"
-    "@turf/invariant": "npm:^7.1.0"
+    "@turf/helpers": "npm:^7.2.0"
+    "@turf/invariant": "npm:^7.2.0"
     "@types/geojson": "npm:^7946.0.10"
-    tslib: "npm:^2.6.2"
-  checksum: 10/124bab9b2bfbcc922ad471b424abca1c14754572a97397911913712d9ade16f56e025f4d649a80f7894ffdab4e46348c66a6959ee724428c17f1a8c19b8cbe6c
+    tslib: "npm:^2.8.1"
+  checksum: 10/4033fbaf40cf12ee47eeb285f7192825d2f0d7671b0bea636dc14b8531e32fb57d58e4d2815357dca2d4c398ce9c1df619882f1842d013176c178fa1e3458429
   languageName: node
   linkType: hard
 
@@ -4260,14 +4260,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turf/invariant@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@turf/invariant@npm:7.1.0"
+"@turf/invariant@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@turf/invariant@npm:7.2.0"
   dependencies:
-    "@turf/helpers": "npm:^7.1.0"
+    "@turf/helpers": "npm:^7.2.0"
     "@types/geojson": "npm:^7946.0.10"
-    tslib: "npm:^2.6.2"
-  checksum: 10/3f35c8c26a6921f5810c8c3296983199efcb0e28f9849e691f3e534691637e3ecc22716a5956b57a22aa9c12a80f8a7b4bb4127166fd0b0292b3ce9a3df364e0
+    tslib: "npm:^2.8.1"
+  checksum: 10/f35ba9d18b6759f7f93833bcaf28869694c3a179fe8a669a3f7397adb88ee30301db9280ad3540531a981458d481112c6190b282445d1d9d11778ba7cd0077c3
   languageName: node
   linkType: hard
 
@@ -13613,7 +13613,7 @@ __metadata:
     "@testing-library/jest-dom": "npm:^6.6.3"
     "@testing-library/react": "npm:^16.1.0"
     "@testing-library/user-event": "npm:^14.5.2"
-    "@turf/bearing": "npm:^7.1.0"
+    "@turf/bearing": "npm:^7.2.0"
     "@turf/center": "npm:^7.2.0"
     "@turf/helpers": "npm:^7.1.0"
     "@types/eslint-config-prettier": "npm:^6.11.3"
