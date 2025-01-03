@@ -76,7 +76,7 @@ $grey-lightest: hsl(221, 14%, 93%);
 @forward "bulma/sass/elements/title";
 
 @use "bulma/sass/layout/footer" with (
-  $footer-padding: 1rem 1.5rem 1rem
+  $footer-padding: 0.5rem 1.5rem 0.5rem
 );
 @forward "bulma/sass/layout/hero";
 @forward "bulma/sass/layout/section";
