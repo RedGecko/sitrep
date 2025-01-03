@@ -4,6 +4,7 @@
 
 - *(lang)* Translate translations.json in fr ([#610](https://github.com/f-eld-ch/sitrep/issues/610)) - ([5ab1668](https://github.com/f-eld-ch/sitrep/commit/5ab166860f9c00b85e15bbab41ee22ecf12a0bee))
 - *(lang)* Translate translations.json in en ([#608](https://github.com/f-eld-ch/sitrep/issues/608)) - ([63043ba](https://github.com/f-eld-ch/sitrep/commit/63043ba4779818a3a8c4a88ce829ab432e2a80a2))
+- *(map)* Add translations for map ([#607](https://github.com/f-eld-ch/sitrep/issues/607)) - ([a606535](https://github.com/f-eld-ch/sitrep/commit/a606535ec8170e35571ac0bf3f609f4309ac8a91))
 - *(ui)* Remove beta label from situation map nav item - ([e5fc2f8](https://github.com/f-eld-ch/sitrep/commit/e5fc2f8282eafa5655b5dbb3354614ed2c4b5eb2))
 
 ### 🐛 Bug Fixes
