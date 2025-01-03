@@ -38,7 +38,10 @@ $grey-lightest: hsl(221, 14%, 93%);
 );
 
 // Import the components we need
-@forward "bulma/sass/base";
+@forward "bulma/sass/base" with (
+  $body-overflow-y: "auto"
+);
+
 @forward "bulma/sass/helpers";
 @forward "bulma/sass/grid";
 
