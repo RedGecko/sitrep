@@ -1,5 +1,6 @@
 {
   "add": "add",
+  "devisionAdd": "add new division",
   "all": "all",
   "assignPriority": "assign priority",
   "close": "close",
@@ -11,7 +12,6 @@
   "createNewRequest": "Create a new application",
   "createNewTask": "create new task",
   "createdAt": "opened",
-  "devisionAdd": "add new division",
   "divisions": "divisions",
   "edit": "edit",
   "editIncident": "edit incident",
@@ -92,5 +92,5 @@
     "RESET": "reset"
   },
   "write": "write",
-  "updateNotification": "A new version of the application is available. Click here to update."
+  "updateNotification": "A new version is available. Please refresh the page with the refresh button."
 }
