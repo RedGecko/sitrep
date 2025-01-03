@@ -1,5 +1,6 @@
 {
   "add": "ajouter",
+  "devisionAdd": "ajouter un nouveau domaine",
   "all": "tout",
   "assignPriority": "attribuer la priorité",
   "close": "fermer",
@@ -11,7 +12,6 @@
   "createNewRequest": "Créer une nouvelle demande",
   "createNewTask": "créer une nouvelle tâche",
   "createdAt": "ouvert",
-  "devisionAdd": "ajouter un nouveau domaine",
   "divisions": "domaine",
   "edit": "éditer",
   "editIncident": "modifier l'incident",
@@ -92,5 +92,5 @@
     "RESET": "réinitialiser"
   },
   "write": "écrivez",
-  "updateNotification": "En nouvelle version disponible"
+  "updateNotification": "Une nouvelle version de l'application est disponible. Veuillez actualiser la page en cliquant sur le bouton Refresh."
 }
