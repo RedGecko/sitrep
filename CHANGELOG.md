@@ -2,6 +2,7 @@
 
 ### ⛰️  Features
 
+- *(lang)* Translate translations.json in en ([#608](https://github.com/f-eld-ch/sitrep/issues/608)) - ([63043ba](https://github.com/f-eld-ch/sitrep/commit/63043ba4779818a3a8c4a88ce829ab432e2a80a2))
 - *(ui)* Remove beta label from situation map nav item - ([e5fc2f8](https://github.com/f-eld-ch/sitrep/commit/e5fc2f8282eafa5655b5dbb3354614ed2c4b5eb2))
 
 ### 🐛 Bug Fixes
@@ -43,6 +44,9 @@
 - *(deps)* Bump i18next-browser-languagedetector in /ui ([#563](https://github.com/f-eld-ch/sitrep/issues/563)) - ([1d8f273](https://github.com/f-eld-ch/sitrep/commit/1d8f27328f2be404eed85751e12dc0acf2e28317))
 - *(deps)* Bump @openfeature/react-sdk from 0.4.8 to 0.4.9 in /ui ([#549](https://github.com/f-eld-ch/sitrep/issues/549)) - ([3669f0a](https://github.com/f-eld-ch/sitrep/commit/3669f0a97519d59d69c6d241419a70cb62c010cf))
 
+## New Contributors ❤️
+
+* @transifex-integration[bot] made their first contribution in [#608](https://github.com/f-eld-ch/sitrep/pull/608)
 
 ## [24.12.1](https://github.com/f-eld-ch/sitrep/compare/v24.12.0..v24.12.1) - 2024-12-04
 
