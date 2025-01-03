@@ -1,7 +1,7 @@
-import { icon } from "@fortawesome/fontawesome-svg-core";
 import { faFileText } from "@fortawesome/free-regular-svg-icons";
 import { faArrowsRotate, faHeading, faLock, faLockOpen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
 import classNames from "classnames";
 import {
   BabsIcon,
@@ -48,6 +48,7 @@ const IconController = memo((props: BabsIconControllerProps) => {
   const { selectedFeature, onUpdate } = props;
   const { current: map } = useMap();
   const [rotationLock, setRotationLock] = useState<boolean>(!isUndefined(selectedFeature?.properties?.iconRotation));
+  const { t } = useTranslation();
 
   const onRotateClick = useCallback(
     (rotationLock: boolean) => {
@@ -118,7 +119,7 @@ const IconController = memo((props: BabsIconControllerProps) => {
         <button
           type="button"
           className="maplibregl-ctrl-icon"
-          title={rotationLock ? "Fixierte Signatur lösen" : "Signatur fixieren"}
+          title={rotationLock ? t("mapview.unlock") : t("mapview.unlock")}
           onClick={() => {
             onRotateClick(!rotationLock);
           }}
@@ -132,6 +133,7 @@ const IconController = memo((props: BabsIconControllerProps) => {
 
 function IconGroupMenu(props: GroupMenuProps) {
   const { iconGroup, onUpdate, feature, name } = props;
+  const { t } = useTranslation();
 
   const lastIcon = Object.values(iconGroup).pop();
   const [active, setActive] = useState<boolean>(false);
@@ -154,8 +156,8 @@ function IconGroupMenu(props: GroupMenuProps) {
     return (
       <div className="maplibregl-ctrl maplibregl-ctrl-group" style={iconControllerFlexboxStyleRow}>
         {Object.values(iconGroup).map((icon) => (
-          <button key={icon.name} title={icon.description} onClick={() => onClickIcon(icon)}>
-            <img src={icon.src} alt={icon.name} />
+          <button key={icon.name} title={t(`babs.icons.${icon.description}`)} onClick={() => onClickIcon(icon)}>
+            <img src={icon.src} alt={t(`babs.icons.${icon.description}`)} />
           </button>
         ))}
       </div>
@@ -166,8 +168,8 @@ function IconGroupMenu(props: GroupMenuProps) {
       className="maplibregl-ctrl maplibregl-ctrl-group"
       style={{ marginTop: "5px", marginBottom: "0px", flexFlow: "column wrap" }}
     >
-      <button key={lastIcon.name} title={name} onClick={() => setActive(!active)}>
-        <img src={lastIcon.src} alt={icon.name} />
+      <button key={lastIcon.name} title={t(`babs.groups.${name}`)} onClick={() => setActive(!active)}>
+        <img src={lastIcon.src} title={t(`babs.groups.${name}`)} />
       </button>
     </div>
   );
@@ -175,6 +177,7 @@ function IconGroupMenu(props: GroupMenuProps) {
 
 const LineController = memo((props: BabsIconControllerProps) => {
   const { selectedFeature, onUpdate } = props;
+  const { t } = useTranslation();
 
   const onClickIcon = useCallback(
     (i: TypesType) => {
@@ -224,9 +227,9 @@ const LineController = memo((props: BabsIconControllerProps) => {
   return (
     <div className="maplibregl-ctrl-top-right" style={iconControllerStyle}>
       <div className="maplibregl-ctrl maplibregl-ctrl-group" style={iconControllerFlexboxStyleColumn}>
-        {Object.values(LineTypes).map((t) => (
-          <button key={t.name} title={t.description} onClick={() => onClickIcon(t)}>
-            <img src={t.icon.src} alt={icon.name} />
+        {Object.values(LineTypes).map((l) => (
+          <button key={l.name} title={t(`babs.lines.${l.description}`)} onClick={() => onClickIcon(l)}>
+            <img src={l.icon.src} alt={t(`babs.lines.${l.description}`)} />
           </button>
         ))}
       </div>
@@ -245,8 +248,8 @@ const LineController = memo((props: BabsIconControllerProps) => {
       >
         <button
           type="button"
-          className="maplibregl-ctrl-icon"
-          title="Richtung useMapdrehen"
+          className="maplibregl-ctrl-icon has-text-dark"
+          title={t("mapview.rotate")}
           onClick={() => onRotateClick()}
         >
           <FontAwesomeIcon icon={faArrowsRotate} size="lg" />
@@ -258,6 +261,7 @@ const LineController = memo((props: BabsIconControllerProps) => {
 
 const ZoneController = memo((props: BabsIconControllerProps) => {
   const { selectedFeature, onUpdate } = props;
+  const { t } = useTranslation();
 
   const onClickIcon = useCallback(
     (i: TypesType) => {
@@ -284,9 +288,9 @@ const ZoneController = memo((props: BabsIconControllerProps) => {
   return (
     <div className="maplibregl-ctrl-top-right" style={iconControllerStyle}>
       <div className="maplibregl-ctrl maplibregl-ctrl-group" style={iconControllerFlexboxStyleColumn}>
-        {Object.values(ZoneTypes).map((t) => (
-          <button key={t.name} title={t.description} onClick={() => onClickIcon(t)}>
-            <img src={t.icon.src} alt={icon.name} />
+        {Object.values(ZoneTypes).map((l) => (
+          <button key={l.name} title={t(`babs.zones.${l.description}`)} onClick={() => onClickIcon(l)}>
+            <img src={l.icon.src} alt={t(`babs.zones.${l.description}`)} />
           </button>
         ))}
       </div>
@@ -464,7 +468,7 @@ const FeatureDetailControlPanel = memo((props: BabsIconControllerProps) => {
   const { selectedFeature, onUpdate } = props;
   const [enteredText, setEnteredText] = useState<string>(selectedFeature?.properties?.name);
   const [active, setActive] = useState<boolean>(false);
-
+  const { t } = useTranslation();
   const onInput = useCallback(
     (name: string) => {
       if (selectedFeature !== undefined) {
@@ -520,12 +524,12 @@ const FeatureDetailControlPanel = memo((props: BabsIconControllerProps) => {
 
   return (
     <div className="maplibregl-ctrl maplibregl-ctrl-top-right control-panel">
-      <h5 className="title is-5">Name</h5>
+      <h5 className="title is-5">{t("name")}</h5>
       <div className="control has-icons-left has-icons-right mb-1">
         <input
           className="input is-small"
           type="text"
-          placeholder="Name"
+          placeholder={t("name")}
           onChange={(e) => {
             setEnteredText(e.target.value);
           }}
@@ -541,7 +545,7 @@ const FeatureDetailControlPanel = memo((props: BabsIconControllerProps) => {
         </span>
       </div>
       <button className="button is-primary is-small" onClick={() => onInput(enteredText)}>
-        Speichern
+        {t("save")}
       </button>
     </div>
   );
