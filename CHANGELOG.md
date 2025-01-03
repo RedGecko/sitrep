@@ -2,6 +2,7 @@
 
 ### ⛰️  Features
 
+- *(lang)* Translate translations.json in fr ([#610](https://github.com/f-eld-ch/sitrep/issues/610)) - ([5ab1668](https://github.com/f-eld-ch/sitrep/commit/5ab166860f9c00b85e15bbab41ee22ecf12a0bee))
 - *(lang)* Translate translations.json in en ([#608](https://github.com/f-eld-ch/sitrep/issues/608)) - ([63043ba](https://github.com/f-eld-ch/sitrep/commit/63043ba4779818a3a8c4a88ce829ab432e2a80a2))
 - *(ui)* Remove beta label from situation map nav item - ([e5fc2f8](https://github.com/f-eld-ch/sitrep/commit/e5fc2f8282eafa5655b5dbb3354614ed2c4b5eb2))
 
@@ -46,7 +47,7 @@
 
 ## New Contributors ❤️
 
-* @transifex-integration[bot] made their first contribution in [#608](https://github.com/f-eld-ch/sitrep/pull/608)
+* @transifex-integration[bot] made their first contribution in [#610](https://github.com/f-eld-ch/sitrep/pull/610)
 
 ## [24.12.1](https://github.com/f-eld-ch/sitrep/compare/v24.12.0..v24.12.1) - 2024-12-04
 
