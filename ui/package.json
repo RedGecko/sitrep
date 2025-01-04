@@ -38,7 +38,7 @@
     "react-i18next": "^15.4.0",
     "react-map-gl": "~7.1.8",
     "react-markdown": "^9.0.1",
-    "react-router-dom": "^6.28.0",
+    "react-router-dom": "^6.28.1",
     "usehooks-ts": "^3.1.0",
     "uuid": "^11.0.3",
     "web-vitals": "^4.2.4"
@@ -82,9 +82,9 @@
     "@types/lodash": "^4.17.14",
     "@types/mapbox__mapbox-gl-draw": "~1.4.6",
     "@types/node": "^20.17.11",
-    "@types/react": "^18.3.12",
+    "@types/react": "^18.3.18",
     "@types/react-color": "^3.0.13",
-    "@types/react-dom": "^18.3.1",
+    "@types/react-dom": "^18.3.5",
     "@types/react-router-dom": "^5.3.3",
     "@types/semver": "^7.5.8",
     "@types/uuid": "^10.0.0",
@@ -105,7 +105,7 @@
     "lint-staged": "^15.3.0",
     "prettier": "^3.4.2",
     "rollup-plugin-visualizer": "^5.13.1",
-    "sass": "^1.83.0",
+    "sass": "^1.83.1",
     "semver": "^7.6.3",
     "source-map-explorer": "^2.5.3",
     "ts-jest": "^29.2.5",
@@ -125,5 +125,5 @@
     "rollup": "^4.22.4",
     "maplibre-gl": "4.7.1"
   },
-  "packageManager": "yarn@4.5.0"
+  "packageManager": "yarn@4.6.0"
 }
