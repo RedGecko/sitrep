@@ -5,7 +5,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useMap } from "react-map-gl/maplibre";
 import debounce from "lodash/debounce";
 import isEmpty from "lodash/isEmpty";
-import ReactHtmlParser from "react-html-parser";
+import parse from "html-react-parser";
 
 const BASE_URL = "https://api3.geo.admin.ch/rest/services/api/SearchServer";
 
@@ -119,7 +119,7 @@ function SearchControl() {
               {searchResults &&
                 searchResults.map((result: SearchFeature) => (
                   <a onClick={() => flyTo(result)} key={result.id} className="dropdown-item">
-                    {ReactHtmlParser(result.properties.label)}
+                    {parse(result.properties.label)}
                   </a>
                 ))}
             </div>
