@@ -25,6 +25,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Replace react-html-parser with html-react-parser - ([29f311a](https://github.com/f-eld-ch/sitrep/commit/29f311a1d227598f6f3192ff61d6e6879256f284))
 - *(deps)* Bump @turf/helpers from 7.1.0 to 7.2.0 in /ui ([#601](https://github.com/f-eld-ch/sitrep/issues/601)) - ([527ab2e](https://github.com/f-eld-ch/sitrep/commit/527ab2eb117030d4ef24d3320e5cbb9939d14315))
 - *(deps)* Bump @turf/bearing from 7.1.0 to 7.2.0 in /ui ([#600](https://github.com/f-eld-ch/sitrep/issues/600)) - ([6285612](https://github.com/f-eld-ch/sitrep/commit/6285612b9f878fb98432dee5133c9586e62f3225))
 - *(deps)* Bump @turf/center from 7.1.0 to 7.2.0 in /ui ([#602](https://github.com/f-eld-ch/sitrep/issues/602)) - ([cbfd0cc](https://github.com/f-eld-ch/sitrep/commit/cbfd0cc254d9c802c70dc5ff26365301ffa57c63))
