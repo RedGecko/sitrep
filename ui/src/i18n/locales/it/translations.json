@@ -41,7 +41,7 @@
   },
   "babs": {
     "groups": {
-      "Schäden": "Danni ",
+      "Schäden": "Danni",
       "Schadenauswirkungen": "Effetti del danno",
       "Einrichtungen Im Einsatzraum": "Installazioni nella zona d’intervento / di catastrofe",
       "Zivile Führungsstandorte": "Ubicazioni di condotta civili",
@@ -59,7 +59,7 @@
       "Zerstörte, unpassierbare Zone": "Zona sinistrata impraticabile"
     },
     "lines": {
-      "Rutschgebiet": "Zona colpita da frana",
+      "Rutschgebiet": "Zona colpita da frana o valanga",
       "Strasse erschwert befahrbar / begehbar": "Strada percorribile con difficoltà per i veicoli e i pedoni",
       "Strasse nicht befahrbar / schwer Begehbar": "Strada non percorribile per i veicoli / accesso pedonale difficoltoso",
       "Strasse unpassierbar / gesperrt": "Strada impraticabile / sbarrata",
@@ -156,7 +156,7 @@
       "RadioaktiveStoffe": "Sostanze radioattive",
       "RegionalesFuehrungsorgan": "Organo di condotta regionale",
       "RettungsAchse": "Asse d’intervento di salvataggio",
-      "Rutschgebiet": "Zona colpita da frana o valanga ",
+      "Rutschgebiet": "Zona colpita da frana o valanga",
       "Sabotage": "Sabotaggio",
       "Sammelstelle": "Posto collettore",
       "Sanitätshilfsstelle": "Posto di soccorso sanitario",
