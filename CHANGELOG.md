@@ -2,6 +2,7 @@
 
 ### ⛰️  Features
 
+- *(lang)* Translate translations.json in it ([#614](https://github.com/f-eld-ch/sitrep/issues/614)) - ([ba3243e](https://github.com/f-eld-ch/sitrep/commit/ba3243e645b731bbd027ecc61e13d16874224568))
 - *(lang)* Translate translations.json in en ([#615](https://github.com/f-eld-ch/sitrep/issues/615)) - ([975023b](https://github.com/f-eld-ch/sitrep/commit/975023b584ce4b009a8fed92ff0405e05d15f125))
 - *(lang)* Updates for project Sitrep and language it ([#612](https://github.com/f-eld-ch/sitrep/issues/612)) - ([d3735b6](https://github.com/f-eld-ch/sitrep/commit/d3735b6d34cd5dfced2f121f2419a50d740e45bd))
 - *(lang)* Translate translations.json in fr ([#610](https://github.com/f-eld-ch/sitrep/issues/610)) - ([5ab1668](https://github.com/f-eld-ch/sitrep/commit/5ab166860f9c00b85e15bbab41ee22ecf12a0bee))
@@ -52,7 +53,7 @@
 
 ## New Contributors ❤️
 
-* @transifex-integration[bot] made their first contribution in [#615](https://github.com/f-eld-ch/sitrep/pull/615)
+* @transifex-integration[bot] made their first contribution in [#614](https://github.com/f-eld-ch/sitrep/pull/614)
 
 ## [24.12.1](https://github.com/f-eld-ch/sitrep/compare/v24.12.0..v24.12.1) - 2024-12-04
 
