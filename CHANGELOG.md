@@ -27,6 +27,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Upgrade react-router to v7.1.1 ([#616](https://github.com/f-eld-ch/sitrep/issues/616)) - ([1d6a6c7](https://github.com/f-eld-ch/sitrep/commit/1d6a6c7c9efde0b56e35ef68254000f6f047b605))
 - *(deps)* Replace react-html-parser with html-react-parser - ([29f311a](https://github.com/f-eld-ch/sitrep/commit/29f311a1d227598f6f3192ff61d6e6879256f284))
 - *(deps)* Bump @turf/helpers from 7.1.0 to 7.2.0 in /ui ([#601](https://github.com/f-eld-ch/sitrep/issues/601)) - ([527ab2e](https://github.com/f-eld-ch/sitrep/commit/527ab2eb117030d4ef24d3320e5cbb9939d14315))
 - *(deps)* Bump @turf/bearing from 7.1.0 to 7.2.0 in /ui ([#600](https://github.com/f-eld-ch/sitrep/issues/600)) - ([6285612](https://github.com/f-eld-ch/sitrep/commit/6285612b9f878fb98432dee5133c9586e62f3225))
