@@ -3,7 +3,7 @@ import { faTag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router";
 import { InsertJournalData, InsertJournalVars } from "types/journal";
 import { GetIncidentDetails } from "views/incident/graphql";
 import { GetJournals, InsertJournal } from "./graphql";

@@ -2,7 +2,7 @@ import { useQuery } from "@apollo/client";
 import { faBars, faExplosion } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router";
 import { IncidentDetailsData, IncidentDetailsVars } from "types";
 import { GetIncidentDetails } from "views/incident/graphql";
 

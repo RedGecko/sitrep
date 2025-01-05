@@ -1,7 +1,7 @@
 import { useQuery } from "@apollo/client";
 import { Spinner } from "components";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import { IncidentDetailsData, IncidentDetailsVars } from "types";
 import { GetIncidentDetails } from "./graphql";
 

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Spinner } from "components";
 import { useTranslation } from "react-i18next";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import { Message, MessageListData, MessageListVars, PriorityStatus, TriageStatus } from "types";
 import { GetJournalMessages } from "./graphql";
 import { default as JournalMessage } from "./Message";

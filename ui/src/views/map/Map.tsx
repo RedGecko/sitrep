@@ -31,7 +31,7 @@ import { LayerContext, LayersProvider } from "./LayerContext";
 import { StyleController, selectedStyle } from "./controls/StyleController";
 import { memo, useCallback, useContext, useEffect, useState } from "react";
 import { useMutation, useQuery, useReactiveVar } from "@apollo/client";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import bbox from "@turf/bbox";
 import DrawControl from "./controls/DrawControl";
 import EnrichedLayerFeatures, { EnrichedSymbolSource } from "components/map/EnrichedLayerFeatures";

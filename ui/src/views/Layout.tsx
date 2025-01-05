@@ -2,7 +2,7 @@
 import { Footer, Navbar } from "components";
 import React, { useContext, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router";
 import { UserContext } from "utils";
 import { Login } from "./Login";
 

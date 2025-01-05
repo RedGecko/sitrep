@@ -3,7 +3,7 @@ import React, { useCallback, useContext, useEffect, useReducer } from "react";
 import { useMutation, useQuery } from "@apollo/client";
 import { t } from "i18next";
 import uniq from "lodash/uniq";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router";
 import { Medium, Message, MessageListData, MessageListVars, PriorityStatus, TriageStatus } from "types";
 import Notification from "utils/Notification";
 import useDebounce from "utils/useDebounce";
