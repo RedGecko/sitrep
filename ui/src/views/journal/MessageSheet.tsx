@@ -8,7 +8,7 @@ import relativeTime from "dayjs/plugin/relativeTime";
 
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import { Medium, PriorityStatus, TriageMessageData, TriageMessageVars, TriageStatus } from "types";
 import { GetMessageForTriage } from "./graphql";
 

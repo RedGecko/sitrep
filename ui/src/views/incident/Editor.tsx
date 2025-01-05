@@ -1,7 +1,7 @@
 import { useQuery } from "@apollo/client";
 import { Spinner } from "components";
 import { useTranslation } from "react-i18next";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import { IncidentDetailsData, IncidentDetailsVars } from "types";
 import { GetIncidentDetails } from "./graphql";
 import { IncidentForm } from "./New";

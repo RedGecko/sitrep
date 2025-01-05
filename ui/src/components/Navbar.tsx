@@ -25,7 +25,7 @@ import { useBooleanFlagValue } from "@openfeature/react-sdk";
 import { faCalendar, faClock } from "@fortawesome/free-regular-svg-icons";
 import logo from "assets/logo.svg";
 import { useTranslation } from "react-i18next";
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router";
 import { useDarkMode } from "utils/useDarkMode";
 import { UserContext } from "utils";
 import { useDate } from "utils/useDate";

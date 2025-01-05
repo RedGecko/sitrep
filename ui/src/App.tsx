@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect } from "react";
-import { Navigate, Route, HashRouter as Router, Routes } from "react-router-dom";
+import { Navigate, Route, HashRouter as Router, Routes } from "react-router";
 
 import "./App.scss";
 
