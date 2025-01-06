@@ -2,6 +2,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump react-markdown from 9.0.1 to 9.0.3 in /ui ([#619](https://github.com/f-eld-ch/sitrep/issues/619)) - ([c817101](https://github.com/f-eld-ch/sitrep/commit/c8171015620cb4b69d7f3b840ac3055fe0483c06))
 - *(deps)* Bump i18next from 24.2.0 to 24.2.1 in /ui ([#620](https://github.com/f-eld-ch/sitrep/issues/620)) - ([7dde835](https://github.com/f-eld-ch/sitrep/commit/7dde835b7ee3b94ab41b50c610ff2235e8c55cf0))
 
 
