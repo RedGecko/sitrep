@@ -1,5 +1,9 @@
 ## [unreleased]
 
+### ⛰️  Features
+
+- *(ui)* Add hosted by VSHN in footer for managed instances ([#621](https://github.com/f-eld-ch/sitrep/issues/621)) - ([28efe2b](https://github.com/f-eld-ch/sitrep/commit/28efe2b02586049b1c6e443309ccacc3d22c126b))
+
 ### ⚙️  Other
 
 - *(deps)* Bump uuid from 11.0.3 to 11.0.4 in /ui ([#618](https://github.com/f-eld-ch/sitrep/issues/618)) - ([f957449](https://github.com/f-eld-ch/sitrep/commit/f957449d94a90608d7aedb1f1cc9d014b906fdab))
