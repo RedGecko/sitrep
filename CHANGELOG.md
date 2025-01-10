@@ -6,6 +6,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump uuid from 11.0.4 to 11.0.5 in /ui ([#624](https://github.com/f-eld-ch/sitrep/issues/624)) - ([05f5577](https://github.com/f-eld-ch/sitrep/commit/05f55777ed718c2d5092f33a09bc0b101bf81908))
 - *(deps)* Bump @apollo/client from 3.12.4 to 3.12.5 in /ui ([#626](https://github.com/f-eld-ch/sitrep/issues/626)) - ([7b9f71c](https://github.com/f-eld-ch/sitrep/commit/7b9f71c8e8d2509dbeb756ef51d99899c50e46b4))
 - *(deps)* Bump uuid from 11.0.3 to 11.0.4 in /ui ([#618](https://github.com/f-eld-ch/sitrep/issues/618)) - ([f957449](https://github.com/f-eld-ch/sitrep/commit/f957449d94a90608d7aedb1f1cc9d014b906fdab))
 - *(deps)* Bump react-markdown from 9.0.1 to 9.0.3 in /ui ([#619](https://github.com/f-eld-ch/sitrep/issues/619)) - ([c817101](https://github.com/f-eld-ch/sitrep/commit/c8171015620cb4b69d7f3b840ac3055fe0483c06))
