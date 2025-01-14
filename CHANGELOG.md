@@ -7,6 +7,7 @@
 
 ### ⚙️  Other
 
+- *(deps)* Bump @apollo/client from 3.12.5 to 3.12.6 in /ui ([#633](https://github.com/f-eld-ch/sitrep/issues/633)) - ([157b945](https://github.com/f-eld-ch/sitrep/commit/157b94557be43d9b72f33b04b5b17c238608c7f6))
 - *(deps)* Bump uuid from 11.0.4 to 11.0.5 in /ui ([#624](https://github.com/f-eld-ch/sitrep/issues/624)) - ([05f5577](https://github.com/f-eld-ch/sitrep/commit/05f55777ed718c2d5092f33a09bc0b101bf81908))
 - *(deps)* Bump @apollo/client from 3.12.4 to 3.12.5 in /ui ([#626](https://github.com/f-eld-ch/sitrep/issues/626)) - ([7b9f71c](https://github.com/f-eld-ch/sitrep/commit/7b9f71c8e8d2509dbeb756ef51d99899c50e46b4))
 - *(deps)* Bump uuid from 11.0.3 to 11.0.4 in /ui ([#618](https://github.com/f-eld-ch/sitrep/issues/618)) - ([f957449](https://github.com/f-eld-ch/sitrep/commit/f957449d94a90608d7aedb1f1cc9d014b906fdab))
