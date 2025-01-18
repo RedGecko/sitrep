@@ -116,7 +116,7 @@
     "vite-plugin-pwa": "^0.21.1",
     "vite-plugin-svgr": "^4.3.0",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^2.1.8"
+    "vitest": "^3.0.2"
   },
   "resolutions": {
     "sharp": "^0.33.5",
